@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DemonHacks</string>
+    <string name="cta_api_url">http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=73436616b5af4465bc65790aa9d4886c&amp;mapid=&amp;=40530&amp;outputType=JSON</string>
 </resources>

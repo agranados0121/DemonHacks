@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String ACTIVITYTAG = "MainActivity";
 
     private TextView textView;
     private Toolbar appBar;
@@ -41,19 +43,35 @@ public class MainActivity extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.launch_tracker:
                                 // fragment for tracker
+                                Log.i(ACTIVITYTAG, "launch tracker pressed");
 
+                                //code here
+
+                                menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_timetable:
                                 // fragment for timetable
+                                Log.i(ACTIVITYTAG, "time table pressed");
 
+                                //code here
+
+                                menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_twitter:
                                 // fragment for cta twitter
+                                Log.i(ACTIVITYTAG, "twitter pressed");
 
+                                //code here
+
+                                menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_reportemergency:
                                 // fragment for reporting emergency
+                                Log.i(ACTIVITYTAG, "report emergency pressed");
 
+                                //code here
+
+                                menuDrawer.closeDrawers();
                                 return true;
                         }
                         return false;
@@ -76,9 +94,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.help:
                 // help fragment
+                Log.i(ACTIVITYTAG, "help pressed");
                 return true;
             case R.id.reportIssue:
                 //report issue fragment
+                Log.i(ACTIVITYTAG, "report Issue pressed");
                 return true;
         }
         return super.onOptionsItemSelected(item);

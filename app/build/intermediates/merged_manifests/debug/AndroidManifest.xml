@@ -18,12 +18,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
-        <activity android:name="com.example.demonhacks.MainActivity" >
+        <activity
+            android:name="com.example.demonhacks.SplashScreenActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.demonhacks.MenuActivity"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

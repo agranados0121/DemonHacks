@@ -13,15 +13,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Date;
-import java.util.Locale;
 
 /*
  * Fetches recent train data from CTA's API
@@ -34,11 +27,13 @@ public class JsonParser extends AsyncTask<String, String, String> {
 
     private ArrayList<Route> routeList;
     private String requestedStation;
+    private RouteAdapter routeAdapter;
     private static final String TAG = "JsonParser";
 
-    public JsonParser(ArrayList<Route> routeList, String requestedStation) {
+    public JsonParser(ArrayList<Route> routeList, String requestedStation, RouteAdapter routeAdapter) {
         this.routeList = routeList;
         this.requestedStation = requestedStation;
+        this.routeAdapter = routeAdapter;
     }
 
     protected String doInBackground(String... params) {
@@ -93,6 +88,7 @@ public class JsonParser extends AsyncTask<String, String, String> {
             int length = jsonArray.length();
 
             Log.d(TAG, String.format("doRead: Reading Data for %s trains", length));
+            routeList.clear();
 
             for (int i = 0; i < length; i++) {
                 JSONObject trainJsonObj = jsonArray.getJSONObject(i);
@@ -100,31 +96,46 @@ public class JsonParser extends AsyncTask<String, String, String> {
                 String arrivalTime = trainJsonObj.getString("arrT");
                 String latitude = trainJsonObj.getString("lat");
                 String longitude = trainJsonObj.getString("lon");
-                Train train = new Train(arrivalTime, "", latitude, longitude);
+                Train train = new Train(arrivalTime, "2min", latitude, longitude);
 
                 String color = trainJsonObj.getString("rt");
-                String station = trainJsonObj.getString("staId");
+                String stationId = trainJsonObj.getString("staId");
+                String stationName = trainJsonObj.getString("staNm");
                 String destination = trainJsonObj.getString("destNm");
 
                 ArrayList<Train> list = new ArrayList<>();
                 list.add(train);
 
-                Route route = new Route(color, station, destination, list);
+                Route route = new Route(color, stationId, stationName, destination, list);
 
-                if (route.getStation().equals(requestedStation)) {
-                    int index = routeList.indexOf(route);
-                    if (index > -1) routeList.get(index).getTrains().add(train);
-                    else routeList.add(route);
+                if (route.getStationId().equals(requestedStation) && !route.getStationName().equals("See train")) {
+                    int index = routeCellIndex(route);
+                    if (index > -1) {
+                        routeList.get(index).getTrains().add(train);
+                    } else {
+                        routeList.add(route);
+                    }
                 }
             }
             Collections.sort(routeList, new SortByLine());
+            routeAdapter.notifyDataSetChanged();
             for (Route r: routeList) {
+                Log.d(TAG, "onPostExecute: " + r.getLine());
                 for (int j = 0; j < r.getTrains().size(); j++) {
-                    Log.d(TAG, String.format("onPostExecute: %s %s %s", r.getStation(), r.getLine(), r.getTrains().get(j).getArrivalTime()));
+                    Log.d(TAG, String.format("onPostExecute: %s %s %s", r.getStationId(), r.getLine(), r.getTrains().get(j).getArrivalTime()));
                 }
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public int routeCellIndex(Route route) {
+        for (int i = 0; i < routeList.size(); i++) {
+            if (routeList.get(i).sharesRoute(route)) {
+                return i;
+            }
+        }
+        return -1;
     }
 }

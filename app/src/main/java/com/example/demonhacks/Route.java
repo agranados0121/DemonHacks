@@ -5,17 +5,19 @@ import java.util.ArrayList;
 /**
  * Stores all Trains for a specific Route
  *
- * A Route is a collection of trains that share the same line, station, and destination
+ * A Route is a collection of trains that share the same line, stationId, and destination
  */
 public class Route {
     private String line;
-    private String station;
+    private String stationId;
+    private String stationName;
     private String destination;
     private ArrayList<Train> trains;
 
-    public Route (String line, String station, String destination, ArrayList<Train> trains) {
+    public Route (String line, String stationId, String stationName, String destination, ArrayList<Train> trains) {
         this.line = line;
-        this.station = station;
+        this.stationId = stationId;
+        this.stationName = stationName;
         this.destination = destination;
         this.trains = trains;
     }
@@ -24,8 +26,12 @@ public class Route {
         return line;
     }
 
-    public String getStation() {
-        return station;
+    public String getStationId() {
+        return stationId;
+    }
+
+    public String getStationName() {
+        return stationName;
     }
 
     public String getDestination() {
@@ -37,9 +43,7 @@ public class Route {
     }
 
     public boolean sharesRoute(Route route) {
-        if (line.equals(route.getLine()) &&
-                station.equals(route.getStation()) &&
-                destination.equals(route.getDestination())) {
+        if (this.line.equals(route.getLine()) && this.stationId.equals(route.getStationId()) && this.destination.equals(route.getDestination())) {
             return true;
         }
         return false;

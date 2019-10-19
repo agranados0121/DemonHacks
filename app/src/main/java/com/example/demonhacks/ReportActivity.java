@@ -1,12 +1,18 @@
 package com.example.demonhacks;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MenuActivity extends AppCompatActivity
+public class ReportActivity extends AppCompatActivity
 {
     // shows the system bars by removing all the flags
     // except for the ones that make the content appear
@@ -57,10 +63,49 @@ public class MenuActivity extends AppCompatActivity
             hideSystemUI();
     }
 
+    Button reportButton;
+    ImageView cameraImage;
+
     @Override
     protected void onCreate(Bundle bundle)
     {
         super.onCreate(bundle);
-        setContentView(R.layout.menulayout);
+        setContentView(R.layout.reportlayout);
+
+        reportButton = (Button)findViewById(R.id.reportButton);
+        cameraImage = (ImageView)findViewById(R.id.cameraImage);
+
+        reportButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent (MediaStore.ACTION_IMAGE_CAPTURE);
+
+                startActivityForResult(intent, 0);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int reqCode, int resCode, Intent data)
+    {
+        if (resCode != 0)
+        {
+            super.onActivityResult(reqCode, resCode, data);
+
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+
+            cameraImage.setImageBitmap(bitmap);
+
+            reportButton.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Toast.makeText(getApplicationContext(), "Testing this thing", Toast.LENGTH_LONG).show();
+                }
+            });
+        }
+
     }
 }

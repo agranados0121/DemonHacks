@@ -11,7 +11,7 @@
 9-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:5:5-23:19
+11-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:5:5-24:19
 12        android:allowBackup="true"
 12-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -19,39 +19,42 @@
 14        android:debuggable="true"
 15        android:icon="@drawable/ventra2"
 15-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:7:9-41
-16        android:label="@string/app_name"
-16-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:9:9-54
+16        android:label="Definitely not the real Ventra app"
+16-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:8:9-59
+17        android:roundIcon="@drawable/ventra2"
+17-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:9:9-46
 18        android:supportsRtl="true"
 18-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/Theme.AppCompat.NoActionBar" >
 20-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:9-59
 21        <activity
-21-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:9-18:20
+21-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:9-19:20
 22            android:name="com.example.demonhacks.SplashScreenActivity"
 22-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:19-55
 23            android:screenOrientation="portrait" >
 23-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:56-92
 24            <intent-filter>
-24-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:13:13-17:29
+24-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:13:13-18:29
 25                <action android:name="android.intent.action.MAIN" />
 25-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:14:17-69
 25-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:14:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:16:17-77
-27-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:16:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity
-30-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:20:9-22:20
-31            android:name="com.example.demonhacks.MenuActivity"
-31-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:20:19-47
-32            android:screenOrientation="portrait" >
-32-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:20:48-84
-33        </activity>
-34    </application>
-35
-36</manifest>
+26                <action android:name="android.intent.action.VIEW" />
+26-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:15:17-69
+26-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:15:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:17:17-77
+28-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:17:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:9-23:20
+32            android:name="com.example.demonhacks.ReportActivity"
+32-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:19-49
+33            android:screenOrientation="portrait" >
+33-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:50-86
+34        </activity>
+35    </application>
+36
+37</manifest>

@@ -100,7 +100,7 @@ public class SplashScreenActivity extends AppCompatActivity
         textView.startAnimation(animation);
 
         // create the intent to go to the menu activity
-        final Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+        final Intent intent = new Intent(getApplicationContext(), ReportActivity.class);
 
         // create a thread that sleeps for awhile so that the splash screen can be properly recognized
         Thread timer = new Thread()
@@ -110,7 +110,7 @@ public class SplashScreenActivity extends AppCompatActivity
             {
                 try
                 {
-                    sleep(5000);
+                    sleep(3500);
 
                 }
                 catch (InterruptedException e)

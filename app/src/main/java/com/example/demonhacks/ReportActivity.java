@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
 
 public class ReportActivity extends AppCompatActivity
 {
@@ -63,7 +64,7 @@ public class ReportActivity extends AppCompatActivity
             hideSystemUI();
     }
 
-    Button reportButton;
+    Button reportButton, reportButton2;
     ImageView cameraImage;
 
     @Override
@@ -72,9 +73,16 @@ public class ReportActivity extends AppCompatActivity
         super.onCreate(bundle);
         setContentView(R.layout.reportlayout);
 
+        // bind the objects to names
         reportButton = (Button)findViewById(R.id.reportButton);
+        reportButton2 = (Button)findViewById(R.id.reportButton2);
         cameraImage = (ImageView)findViewById(R.id.cameraImage);
 
+        // set the alphas for aesthetic looks
+        cameraImage.setAlpha(.666f);
+        reportButton2.setAlpha(.333f);
+
+        // set a listener to allow the user to take a photo to report an incident
         reportButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -86,23 +94,62 @@ public class ReportActivity extends AppCompatActivity
         });
     }
 
+
+
     @Override
     protected void onActivityResult(int reqCode, int resCode, Intent data)
     {
+        // IFF the user actually takes a photo
         if (resCode != 0)
         {
             super.onActivityResult(reqCode, resCode, data);
 
+            // get the image as a bitmap
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
 
+            // revert alpha back to normal and assign the bitmap to the imageview
+            cameraImage.setAlpha(1.0f);
             cameraImage.setImageBitmap(bitmap);
 
+            // rewrite the first button
+            reportButton.setText("Redo");
+
+            // revert alpha and allow the button to be clickable
+            reportButton2.setAlpha(1.0f);
+            reportButton2.setEnabled(true);
+
+            // reassign the functionality of the 1st button
             reportButton.setOnClickListener(new View.OnClickListener()
             {
                 @Override
                 public void onClick(View view)
                 {
-                    Toast.makeText(getApplicationContext(), "Testing this thing", Toast.LENGTH_LONG).show();
+                    //reportButton.setVisibility(View.GONE);
+                    Intent intent = new Intent (MediaStore.ACTION_IMAGE_CAPTURE);
+
+                    startActivityForResult(intent, 0);
+                }
+            });
+
+            // take the image that the user has taken and passes it along to the next activity
+            // so that the user can fill out the rest of the report
+            reportButton2.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Intent intent = new Intent(getApplicationContext(), SubmitReportActivity.class);
+
+                    // save into the bundle the animations so that when the splash screen
+                    // transitions to the title screen,
+                    // the animation plays out smoothly
+                    Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(
+                            getApplicationContext(),
+                            android.R.anim.fade_in,
+                            android.R.anim.fade_out).toBundle();
+
+                    // start the activity
+                    startActivity(intent, bundle);
                 }
             });
         }

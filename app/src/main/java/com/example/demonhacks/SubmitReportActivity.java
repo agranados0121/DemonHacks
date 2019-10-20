@@ -23,13 +23,13 @@ public class SubmitReportActivity extends AppCompatActivity
         super.onCreate(bundle);
         setContentView(R.layout.submitreportlayout);
 
-        frameLayout = (FrameLayout) findViewById(R.id.frameLayout);
+        frameLayout = (FrameLayout) findViewById(R.id.flContent);
 
         fragmentManager = getSupportFragmentManager();
 
         FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        transaction.replace(R.id.frameLayout, new ReportFragment());
+        transaction.replace(R.id.flContent, new ReportFragment());
 
         transaction.commit();
 

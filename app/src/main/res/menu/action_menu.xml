@@ -14,5 +14,8 @@
         android:icon="@android:drawable/btn_star_big_off"
         android:title="@string/reportIssue"
         app:showAsAction="collapseActionView" />
-
+    <item
+        android:id="@+id/searchMenuItem"
+        android:title="@android:string/search_go"
+        app:showAsAction="ifRoom" />
 </menu>

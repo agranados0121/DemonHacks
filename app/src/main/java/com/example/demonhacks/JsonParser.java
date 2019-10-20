@@ -87,7 +87,6 @@ public class JsonParser extends AsyncTask<String, String, String> {
         super.onPostExecute(result);
 
         // TODO Load Data into Recycler View
-        routeList.clear();
 
         try {
             JSONObject jsonObject = new JSONObject(result);
@@ -97,7 +96,6 @@ public class JsonParser extends AsyncTask<String, String, String> {
             int length = jsonArray.length();
 
             Log.d(TAG, String.format("doRead: Reading Data for %s trains", length));
-            routeList.clear();
 
             for (int i = 0; i < length; i++) {
                 JSONObject trainJsonObj = jsonArray.getJSONObject(i);
@@ -110,7 +108,6 @@ public class JsonParser extends AsyncTask<String, String, String> {
                 String latitude = trainJsonObj.getString("lat");
                 String longitude = trainJsonObj.getString("lon");
 
-                //TODO: Fix Time String formatting
                 Train train = new Train(timeData[0], timeData[1], latitude, longitude);
 
                 String color = trainJsonObj.getString("rt");

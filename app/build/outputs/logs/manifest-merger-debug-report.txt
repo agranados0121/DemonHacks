@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/c1763829f79bc3811543d2bb9a22b866/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -41,35 +41,35 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Tommy/.gradle/cach
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/e7284bace20bec096294b5474e153fbf/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/c073c929da6ad4e112abaac7d3212747/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/e72949b043b8df7a6068dab5e7cd21f2/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:11:5-67
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:10:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/b5500d92b545dd8212e1314abbd99a43/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/b5500d92b545dd8212e1314abbd99a43/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:10:22-64
 application
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:13:5-51:19
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:12:5-55:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/c1763829f79bc3811543d2bb9a22b866/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -89,69 +89,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/Tomm
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/Tommy/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:16:9-41
-	android:roundIcon
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:17:9-46
-	android:icon
 		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:16:9-46
+	android:icon
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:20:9-68
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:18:9-68
 	android:usesCleartextTraffic
 		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:19:9-44
+activity#com.example.demonhacks.SearchActivity
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:20:9-61
+	android:name
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:20:19-49
 activity#com.example.demonhacks.SplashScreenActivity
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:22:9-29:20
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:21:9-30:20
 	android:screenOrientation
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:22:56-92
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:23:13-49
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:22:13-49
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:23:13-28:29
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:24:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:24:17-69
-	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:24:25-66
-action#android.intent.action.VIEW
 ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
 		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:25:25-66
+action#android.intent.action.VIEW
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:28:27-74
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:38:9-40:55
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:39:9-41:55
 	android:value
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:40:13-52
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:41:13-52
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:39:13-58
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:40:13-58
 activity#com.example.demonhacks.TrainMapActivity
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:42:9-44:63
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:43:9-45:64
 	android:label
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:44:13-61
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:45:13-61
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:43:13-45
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:44:13-45
 activity#com.example.demonhacks.MainActivity
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:46:9-86
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:46:9-48:52
 	android:screenOrientation
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:46:48-84
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:46:19-47
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:47:13-41
 activity#com.example.demonhacks.ReportActivity
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:48:9-88
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:49:9-51:52
 	android:screenOrientation
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:48:50-86
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:48:19-49
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:50:13-43
 activity#com.example.demonhacks.SubmitReportActivity
-ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:49:9-94
+ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:52:9-54:52
 	android:screenOrientation
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:49:56-92
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:54:13-49
 	android:name
-		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:49:19-55
+		ADDED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml:53:13-49
 uses-sdk
 INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Tommy/Desktop/CSC/AndroidStudioProjects/DemonHacks/app/src/main/AndroidManifest.xml

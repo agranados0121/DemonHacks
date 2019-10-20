@@ -48,6 +48,8 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
         holder.stationText.setText(selection.getStationName());
         holder.directionText.setText(selection.getDestination());
 
+        holder.arrivalsText.setText("");
+        holder.timeText.setText("");
         int size = selection.getTrains().size();
         for (int i = 0; i < size; i++) {
             if (i == (size - 1)){
@@ -65,5 +67,11 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
     public int getItemCount() {
         Log.d(TAG, "getItemCount: " + routeList.size());
         return routeList.size();
+    }
+
+    public void clear() {
+        int size = routeList.size();
+        routeList.clear();
+        notifyItemRangeRemoved(0, size);
     }
 }

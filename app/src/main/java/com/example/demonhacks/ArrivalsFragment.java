@@ -1,21 +1,25 @@
 package com.example.demonhacks;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import static android.app.Activity.RESULT_OK;
+
 public class ArrivalsFragment extends Fragment implements View.OnClickListener, View.OnLongClickListener{
+
+    private static final int CODE_FOR_SEARCH_ACTIVITY = 111;
     private static final String TAG = "ArrivalsActivity";
     private ArrayList<Route> routeList = new ArrayList<>();
     private String requestedStation;
@@ -42,7 +46,16 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
 
         View view = getView();
 
-        requestedStation = "41220"; // 41220 == Fullerton station stop, 40380 == Clark/Lake
+        //TODO init station list
+
+        Intent intent = getActivity().getIntent();
+        Station station;
+        if (intent.hasExtra("STATION")) {
+            station = (Station) intent.getSerializableExtra("STATION");
+            requestedStation = station.getMapId();
+        } else {
+            requestedStation = "40380"; // Default 41220
+        }
 
         recyclerView = view.findViewById(R.id.arrivalsRecycler);
         routeAdapter = new RouteAdapter(routeList, this);
@@ -52,7 +65,7 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
         routeList.clear();
         routeAdapter.notifyDataSetChanged();
 
-        new JsonParser(routeList, requestedStation, routeAdapter).execute(getString(R.string.cta_api_url));
+        getData();
 
         recyclerView.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -66,6 +79,11 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
         });
     }
 
+    public void getData() {
+        Log.d(TAG, "getData: Parsing JSON");
+        new JsonParser(routeList, requestedStation, routeAdapter).execute(getString(R.string.cta_api_url));
+    }
+
     public void openTrainMapActivity(int position) {
         Route selection = routeList.get(position);
         Intent intent = new Intent(getContext(), TrainMapActivity.class);
@@ -73,16 +91,43 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
         startActivity(intent);
     }
 
+    public void openSearchActivity() {
+        Intent intent = new Intent(getContext(), SearchActivity.class);
+        startActivityForResult(intent, CODE_FOR_SEARCH_ACTIVITY);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CODE_FOR_SEARCH_ACTIVITY) {
+            if (resultCode == RESULT_OK) {
+                try {
+                    Station station = (Station) data.getSerializableExtra("STATION");
+                    routeAdapter.clear();
+                    Log.d(TAG, "onActivityResult: routeList " + routeList.size());
+                    requestedStation = station.getMapId();
+                    getData();
+                } catch (Exception e) {
+                    Log.d(TAG, "onActivityResult: Error parsing result");
+                    e.printStackTrace();
+                }
+
+            } else {
+                Log.d(TAG, "onActivityResult: Result Code:" + requestCode);
+            }
+        }
+    }
+
     @Override
     public void onClick(View view) {
         int position = recyclerView.getChildLayoutPosition(view);
-        openTrainMapActivity(position);
+        openSearchActivity();
     }
 
     @Override
     public boolean onLongClick(View view) {
         int position = recyclerView.getChildLayoutPosition(view);
         openTrainMapActivity(position);
-        return false;
+        return true;
     }
 }

@@ -1,6 +1,8 @@
 package com.example.demonhacks;
 
-public class Train {
+import java.io.Serializable;
+
+public class Train implements Serializable {
 
     private String arrivalTime;
     private String timeRemaining;

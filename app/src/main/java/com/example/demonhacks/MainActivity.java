@@ -1,16 +1,15 @@
 package com.example.demonhacks;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import java.util.ArrayList;
 
-import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener{
 
@@ -39,14 +38,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onClick(View v) {
-        // TODO: SWITCH TO MAP TO VIEW TRAINS
+    public void openTrainMapActivity(int position) {
+        Route selection = routeList.get(position);
+        Intent intent = new Intent(this, TrainMapActivity.class);
+        intent.putExtra("ROUTE", selection);
+        startActivity(intent);
     }
 
     @Override
-    public boolean onLongClick(View v) {
-        // TODO: SWITCH TO MAP TO VIEW TRAINS
+    public void onClick(View view) {
+        int position = recyclerView.getChildLayoutPosition(view);
+        openTrainMapActivity(position);
+    }
+
+    @Override
+    public boolean onLongClick(View view) {
+        int position = recyclerView.getChildLayoutPosition(view);
+        openTrainMapActivity(position);
         return true;
     }
 }

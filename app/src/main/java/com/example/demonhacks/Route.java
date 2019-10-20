@@ -1,5 +1,6 @@
 package com.example.demonhacks;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -7,7 +8,7 @@ import java.util.ArrayList;
  *
  * A Route is a collection of trains that share the same line, stationId, and destination
  */
-public class Route {
+public class Route implements Serializable {
     private String line;
     private String stationId;
     private String stationName;

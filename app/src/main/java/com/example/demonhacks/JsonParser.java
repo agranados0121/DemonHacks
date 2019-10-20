@@ -13,8 +13,15 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 
 /*
  * Fetches recent train data from CTA's API
@@ -93,10 +100,17 @@ public class JsonParser extends AsyncTask<String, String, String> {
             for (int i = 0; i < length; i++) {
                 JSONObject trainJsonObj = jsonArray.getJSONObject(i);
 
+
+
                 String arrivalTime = trainJsonObj.getString("arrT");
+
+                //String[] formattedDate = formatDate(arrivalTime);
+
                 String latitude = trainJsonObj.getString("lat");
                 String longitude = trainJsonObj.getString("lon");
-                Train train = new Train(arrivalTime, "2min", latitude, longitude);
+
+                //TODO: Fix Time String formatting
+                Train train = new Train(arrivalTime, "0 min", latitude, longitude);
 
                 String color = trainJsonObj.getString("rt");
                 String stationId = trainJsonObj.getString("staId");
@@ -137,5 +151,11 @@ public class JsonParser extends AsyncTask<String, String, String> {
             }
         }
         return -1;
+    }
+
+    public static String currentTime() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-ddTHH:mm:ss.SSS");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 }

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ReportFragment reptFragment = new ReportFragment();
     private ArrivalsFragment arrivalsFragment = new ArrivalsFragment();
+    private CardFragment cardFragment = new CardFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i(ACTIVITYTAG, "ventra cards pressed");
 
                                 //code here
-
+                                if (!cardFragment.isAdded()){
+                                    ft.replace(R.id.flContent, cardFragment);
+                                    ft.addToBackStack(null);
+                                    ft.commit();
+                                }
                                 menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_reportemergency:

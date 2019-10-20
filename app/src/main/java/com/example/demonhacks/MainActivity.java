@@ -78,14 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
                                 menuDrawer.closeDrawers();
                                 return true;
-                            case R.id.launch_twitter:
-                                // fragment for cta twitter
-                                Log.i(ACTIVITYTAG, "twitter pressed");
-
-                                //code here
-
-                                menuDrawer.closeDrawers();
-                                return true;
                             case R.id.launch_reportemergency:
                                 // fragment for reporting emergency
                                 Log.i(ACTIVITYTAG, "report emergency pressed");

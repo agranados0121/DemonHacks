@@ -87,6 +87,7 @@ public class JsonParser extends AsyncTask<String, String, String> {
         super.onPostExecute(result);
 
         // TODO Load Data into Recycler View
+        routeList.clear();
 
         try {
             JSONObject jsonObject = new JSONObject(result);

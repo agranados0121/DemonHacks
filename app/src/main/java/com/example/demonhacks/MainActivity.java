@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout menuDrawer;
 
     private ReportFragment reptFragment = new ReportFragment();
-    // private TrackerFragment trackerFrag = new TrackerFragment();
+    private ArrivalsFragment arrivalsFragment = new ArrivalsFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +40,14 @@ public class MainActivity extends AppCompatActivity {
         ab.setHomeButtonEnabled(true);
         ab.setHomeAsUpIndicator(R.drawable.ic_action_name);
 
-        FragmentManager fm = getSupportFragmentManager();
-        final FragmentTransaction ft = fm.beginTransaction();
+        final FragmentManager fm = getSupportFragmentManager();
 
         // DEFAULT FRAGMENT
-//        if (!trackerFrag.isAdded()){
-//            ft.replace(R.id.flContent, trackerFrag);
-//            ft.addToBackStack(null);
-//            ft.commit();
-//        }
+        if (!arrivalsFragment.isAdded()){
+            fm.beginTransaction().replace(R.id.flContent, arrivalsFragment)
+            .addToBackStack(null)
+            .commit();
+        }
 
         menuDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView nv = (NavigationView) findViewById(R.id.nv);
@@ -57,19 +56,18 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        final FragmentTransaction ft = fm.beginTransaction();
+                        //fm.popBackStack();
                         switch (menuItem.getItemId()) {
                             case R.id.launch_tracker:
                                 // fragment for tracker
                                 Log.i(ACTIVITYTAG, "launch tracker pressed");
-                                Intent in = new Intent (getApplicationContext(), ArrivalsActivity.class);
-
-                                startActivity(in);
                                 //code here
-//                                if (!trackerFrag.isAdded()){
-//                                    ft.replace(R.id.flContent, trackerFrag);
-//                                    ft.addToBackStack(null);
-//                                    ft.commit();
-//                                }
+                                if (!arrivalsFragment.isAdded()){
+                                    ft.replace(R.id.flContent, arrivalsFragment);
+                                    ft.addToBackStack(null);
+                                    ft.commit();
+                                }
                                 menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_cards:

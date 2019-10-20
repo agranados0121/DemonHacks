@@ -15,9 +15,9 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
 
     private static final String TAG = "RouteAdapter";
     private ArrayList<Route> routeList;
-    private ArrivalsActivity arrivalsActivity;
+    private ArrivalsFragment arrivalsActivity;
 
-    RouteAdapter(ArrayList<Route> routeList, ArrivalsActivity arrivalsActivity) {
+    RouteAdapter(ArrayList<Route> routeList, ArrivalsFragment arrivalsActivity) {
         this.routeList = routeList;
         this.arrivalsActivity = arrivalsActivity;
     }

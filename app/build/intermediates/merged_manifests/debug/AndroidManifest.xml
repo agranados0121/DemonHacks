@@ -63,15 +63,6 @@
             android:name="com.example.demonhacks.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.demonhacks.ArrivalsActivity"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.example.demonhacks.ReportActivity"
             android:screenOrientation="portrait" />
         <activity

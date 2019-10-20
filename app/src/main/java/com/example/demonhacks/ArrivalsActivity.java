@@ -24,7 +24,7 @@ public class ArrivalsActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_arrivals);
 
         // TODO: Do based on user location to nearest station OR/AND on manual selection from search activity
         requestedStation = "41220"; // 41220 == Fullerton station stop

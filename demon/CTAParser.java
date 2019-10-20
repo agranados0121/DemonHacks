@@ -12,20 +12,22 @@ public class CTAParser {
         }
         s.close();
 
-        String[] Stop_ID = Stop_ID(A);
-        String[] Stop_Name = Stop_Name(A);
+        String[] Station_Name = Station_Name(A);
+        String[] Map_ID = Map_ID(A);
         String[] Location_X = X_Cord(A);
         String[] Location_Y = Y_Cord(A);
+        
+        String[][] CTA = {Map_ID, Station_Name, Location_X, Location_Y};
 
-        for(int i = 0; i <Stop_ID.length; i++) {
-        	System.out.println(String.format("%s, %s, %s, %s \n", Stop_ID[i], Stop_Name[i], Location_X[i], Location_Y[i]));
+        for(int i = 0; i <Station_Name.length; i++) {
+        	System.out.println(String.format("%s, %s, %s, %s \n", Station_Name[i], Map_ID[i], Location_X[i], Location_Y[i]));
         }
 	}
 	private static String[] Y_Cord(ArrayList<String> a) {
 		String[] Y_cord = new String[(a.size()-1)];
 		int holder = 0;
 		for(int i = 1; i< a.size(); i++) {
-			Y_cord[holder] = ((a.get(i).split(","))[4]);
+			Y_cord[holder] = ((a.get(i).split(","))[3]);
 			holder++;
 		}
 		return Y_cord;
@@ -34,12 +36,12 @@ public class CTAParser {
 		String[] X_cord = new String[(a.size()-1)];
 		int holder = 0;
 		for(int i = 1; i< a.size(); i++) {
-			X_cord[holder] = ((a.get(i).split(","))[3]);
+			X_cord[holder] = ((a.get(i).split(","))[2]);
 			holder++;
 		}
 		return X_cord;
 	}
-	private static String[] Stop_Name(ArrayList<String> a) {
+	private static String[] Map_ID(ArrayList<String> a) {
 		String[] stop_name = new String[(a.size()-1)];
 		int holder = 0;
 		for(int i = 1; i< a.size(); i++) {
@@ -48,7 +50,7 @@ public class CTAParser {
 		}
 		return stop_name;
 	}
-	private static String[] Stop_ID (ArrayList<String> A) {
+	private static String[] Station_Name (ArrayList<String> A) {
 		String[] stop_id = new String[(A.size()-1)];
 		int holder = 0;
 		for(int i = 1; i< A.size(); i++) {

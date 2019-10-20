@@ -1,301 +1,301 @@
-STOP_ID,STOP_NAME,STATION_NAME,Location X,Location Y
-30162,18th (54th/Cermak-bound),18th,41.857908,-87.669147
-30161,18th (Loop-bound),18th,41.857908,-87.669147
-30022,35th/Archer (Loop-bound),35th/Archer,41.829353,-87.680622
-30023,35th/Archer (Midway-bound),35th/Archer,41.829353,-87.680622
-30214,35-Bronzeville-IIT (63rd-bound),35th-Bronzeville-IIT,41.831677,-87.625826
-30213,35-Bronzeville-IIT (Harlem-bound),35th-Bronzeville-IIT,41.831677,-87.625826
-30246,43rd (63rd-bound),43rd,41.816462,-87.619021
-30245,43rd (Harlem-bound),43rd,41.816462,-87.619021
-30210,47th (63rd-bound),47th,41.809209,-87.618826
-30209,47th (Harlem-bound),47th,41.809209,-87.618826
-30238,47th (95th-bound),47th,41.810318,-87.63094
-30237,47th (Howard-bound),47th,41.810318,-87.63094
-30025,51st (63rd-bound),51st,41.80209,-87.618487
-30024,51st (Harlem-bound),51st,41.80209,-87.618487
-30113,54th/Cermak (Loop-bound),54th/Cermak,41.85177331,-87.75669201
-30114,54th/Cermak (Terminal arrival),54th/Cermak,41.85177331,-87.75669201
-30178,63rd (95th-bound),63rd,41.780536,-87.630952
-30177,63rd (Howard-bound),63rd,41.780536,-87.630952
-30192,69th (95th-bound),69th,41.768367,-87.625724
-30191,69th (Howard-bound),69th,41.768367,-87.625724
-30047,79th (95th-bound),79th,41.750419,-87.625112
-30046,79th (Howard-bound),79th,41.750419,-87.625112
-30275,87th (Howard-bound),87th,41.735372,-87.624717
-30276,87th (95th-bound),87th,41.735372,-87.624717
-30089,95th/Dan Ryan (95th-bound),95th/Dan Ryan,41.722377,-87.624342
-30088,95th/Dan Ryan (Howard-bound),95th/Ran Ryan,41.722377,-87.624342
-30132,Adams/Wabash (Inner Loop),Adams/Wabash,41.879507,-87.626037
-30131,Adams/Wabash (Outer Loop),Adams/Wabash,41.879507,-87.626037
-30277,Addison (Kimball-bound),Addison,41.947028,-87.674642
-30278,Addison (Loop-bound),Addison,41.947028,-87.674642
-30274,Addison (95th-bound),Addison,41.947428,-87.653626
-30273,Addison (Howard-bound),Addison,41.947428,-87.653626
-30240,Addison (Forest Pk-bound),Addison,41.94738,-87.71906
-30239,Addison (O'Hare-bound),Addison,41.94738,-87.71906
-30230,Argyle (95th-bound),Argyle,41.973453,-87.65853
-30229,Argyle (Howard-bound),Argyle,41.973453,-87.65853
-30127,Armitage (Kimball-Linden-bound),Armitage,41.918217,-87.652644
-30128,Armitage (Loop-bound),Armitage,41.918217,-87.652644
-30205,Ashland (Loop-bound),Ashland,41.839234,-87.665317
-30206,Ashland (Midway-bound),Ashland,41.839234,-87.665317
-30033,Ashland (Harlem-54th/Cermak-bound),Ashland,41.885269,-87.666969
-30032,Ashland (Loop-63rd-bound),Ashland,41.885269,-87.666969
-30056,Ashland/63rd (Harlem-bound),Ashland/63rd,41.77886,-87.663766
-30057,Ashland/63rd (Terminal arrival),Ashland/63rd,41.77886,-87.663766
-30002,Austin (Forest Pk-bound),Austin,41.870851,-87.776812
-30001,Austin (O'Hare-bound),Austin,41.870851,-87.776812
-30243,Austin (63rd-bound),Austin,41.887293,-87.774135
-30244,Austin (Harlem-bound),Austin,41.887293,-87.774135
-30013,Belmont (O'Hare Branch) (Forest Pk-bound),Belmont,41.938132,-87.712359
-30012,Belmont (O'Hare Branch) (O'Hare-bound),Belmont,41.938132,-87.712359
-30256,Belmont (95th-bound),Belmont,41.939751,-87.65338
-30255,Belmont (Howard-bound),Belmont,41.939751,-87.65338
-30257,Belmont (Kimball-Linden-bound),Belmont,41.939751,-87.65338
-30258,Belmont (Loop-bound),Belmont,41.939751,-87.65338
-30067,Berwyn (95th-bound),Berwyn,41.977984,-87.658668
-30066,Berwyn (Howard-bound),Berwyn,41.977984,-87.658668
-30268,Bryn Mawr (95th-bound),Bryn Mawr,41.983504,-87.65884
-30267,Bryn Mawr (Howard-bound),Bryn Mawr,41.983504,-87.65884
-30087,California (54th/Cermak-bound),California,41.854109,-87.694774
-30086,California (Loop-bound),California,41.854109,-87.694774
-30265,California (63rd-bound),California,41.88422,-87.696234
-30266,California (Harlem-bound),California,41.88422,-87.696234
-30111,California (O'Hare-bound),California,41.921939,-87.69689
-30112,California (Forest Pk-bound),California,41.921939,-87.69689
-30054,Central (63rd-bound),Central,41.887389,-87.76565
-30055,Central (Harlem-bound),Central,41.887389,-87.76565
-30242,Central (Howard-Loop-bound),Central,42.063987,-87.685617
-30241,Central (Linden-bound),Central,42.063987,-87.685617
-30152,Central Park (54th/Cermak-bound),Central Park,41.853839,-87.714842
-30151,Central Park (Loop-bound),Central Park,41.853839,-87.714842
-30194,Cermak-Chinatown (95th-bound),Cermak-Chinatown,41.853206,-87.630968
-30193,Cermak-Chinatown (Howard-bound),Cermak-Chinatown,41.853206,-87.630968
-30381,Cermak-McCormick Place (Harlem-bound),Cermak-McCormick Place,41.853115,-87.626402
-30382,Cermak-McCormick Place (63rd-bound),Cermak-McCormick Place,41.853115,-87.626402
-30271,Chicago (O'Hare-bound),Chicago,41.896075,-87.655214
-30138,Chicago (Loop-bound),Chicago,41.89681,-87.635924
-30137,Chicago (Kimball-Linden-bound),Chicago,41.89681,-87.635924
-30280,Chicago (95th-bound),Chicago,41.896671,-87.628176
-30279,Chicago (Howard-bound),Chicago,41.896671,-87.628176
-30272,Chicago (Forest Pk-bound),Chicago,41.896075,-87.655214
-30083,Cicero (54th/Cermak-bound),Cicero,41.85182,-87.745336
-30082,Cicero (Loop-bound),Cicero,41.85182,-87.745336
-30188,Cicero (Forest Pk-bound),Cicero,41.871574,-87.745154
-30187,Cicero (O'Hare-bound),Cicero,41.871574,-87.745154
-30094,Cicero (63rd-bound),Cicero,41.886519,-87.744698
-30009,Cicero (Harlem-bound),Cicero,41.886519,-87.744698
-30121,Clark/Division (Howard-bound),Clark/Division,41.90392,-87.631412
-30122,Clark/Division (95th-bound),Clark/Division,41.90392,-87.631412
-30074,Clark/Lake (Inner Loop),Clark/Lake,41.885737,-87.630886
-30075,Clark/Lake (Outer Loop),Clark/Lake,41.885737,-87.630886
-30374,Clark/Lake (Forest Pk-bound),Clark/Lake,41.885737,-87.630886
-30375,Clark/Lake (O'Hare-bound),Clark/Lake,41.885737,-87.630886
-30085,Clinton (Forest Pk-bound),Clinton,41.875539,-87.640984
-30084,Clinton (O'Hare-bound),Clinton,41.875539,-87.640984
-30222,Clinton (Harlem-54th/Cermak-bound),Clinton,41.885678,-87.641782
-30221,Clinton (Loop-63rd-bound),Clinton,41.885678,-87.641782
-30291,Conservatory (63rd-bound),Conservatory,41.884904,-87.716523
-30292,Conservatory (Harlem-bound),Conservatory,41.884904,-87.716523
-30139,Cottage Grove (Terminal arrival),Cottage Grove,41.780309,-87.605857
-30140,Cottage Grove (Harlem-bound),Cottage Grove,41.780309,-87.605857
-30045,Cumberland (Forest Pk-bound),Cumberland,41.984246,-87.838028
-30044,Cumberland (O'Hare-bound),Cumberland,41.984246,-87.838028
-30041,Damen (54th/Cermak-bound),Damen,41.854517,-87.675975
-30040,Damen (Loop-bound),Damen,41.854517,-87.675975
-30116,Damen/Milwaukee (Forest Pk-bound),Damen,41.909744,-87.677437
-30115,Damen/Milwaukee (O'Hare-bound),Damen,41.909744,-87.677437
-30018,Damen (Kimball-bound),Damen,41.966286,-87.678639
-30019,Damen (Loop-bound),Damen,41.966286,-87.678639
-30011,Davis (Howard-Loop-bound),Davis,42.04771,-87.683543
-30010,Davis (Linden-bound),Davis,42.04771,-87.683543
-30134,Dempster (Howard-Loop-bound),Dempster,42.041655,-87.681602
-30133,Dempster (Linden-bound),Dempster,42.041655,-87.681602
-30027,Dempster-Skokie (Howard-bound),Dempster-Skokie,42.038951,-87.751919
-30026,Dempster-Skokie (Arrival),Dempster-Skokie,42.038951,-87.751919
-30103,Diversey (Kimball-Linden-bound),Diversey,41.932732,-87.653131
-30104,Diversey (Loop-bound),Diversey,41.932732,-87.653131
-30063,Division (Forest Pk-bound),Division,41.903355,-87.666496
-30062,Division (O'Hare-bound),Division,41.903355,-87.666496
-30076,Forest Park (O'Hare-bound),Forest Park,41.874257,-87.817318
-30077,Forest Park (Terminal Arrival),Forest Park,41.874257,-87.817318
-30102,Foster (Howard-Loop-bound),Foster,42.05416,-87.68356
-30101,Foster (Linden-bound),Foster,42.05416,-87.68356
-30167,Francisco (Kimball-bound),Francisco,41.966046,-87.701644
-30168,Francisco (Loop-bound),Francisco,41.966046,-87.701644
-30234,Fullerton (95th-bound),Fullerton,41.925051,-87.652866
-30233,Fullerton (Howard-bound),Fullerton,41.925051,-87.652866
-30235,Fullerton (Kimball-Linden-bound),Fullerton,41.925051,-87.652866
-30236,Fullerton (Loop-bound),Fullerton,41.925051,-87.652866
-30100,Garfield (63rd-bound),Garfield,41.795172,-87.618327
-30099,Garfield (Harlem-bound),Garfield,41.795172,-87.618327
-30224,Garfield (95th-bound),Garfield,41.79542,-87.631157
-30223,Garfield (Howard-bound),Garfield,41.79542,-87.631157
-30096,Grand/Milwaukee (Forest Pk-bound),Grand,41.891189,-87.647578
-30095,Grand/Milwaukee (O'Hare-bound),Grand,41.891189,-87.647578
-30065,Grand/State (95th-bound),Grand,41.891665,-87.628021
-30064,Grand/State (Howard-bound),Grand,41.891665,-87.628021
-30148,Granville (95th-bound),Granville,41.993664,-87.659202
-30147,Granville (Howard-bound),Granville,41.993664,-87.659202
-30215,Halsted (Loop-bound),Halsted,41.84678,-87.648088
-30216,Halsted (Midway-bound),Halsted,41.84678,-87.648088
-30184,Halsted/63rd (Ashland-bound),Halsted,41.778943,-87.644244
-30183,Halsted/63rd (Harlem-bound),Halsted,41.778943,-87.644244
-30146,Harlem (O'Hare Branch) (Forest Pk-bound),Harlem,41.98227,-87.8089
-30145,Harlem (O'Hare Branch) (O'Hare-bound),Harlem,41.98227,-87.8089
-30189,Harlem (Forest Pk Branch) (O'Hare-bound),Harlem,41.87349,-87.806961
-30190,Harlem (Forest Pk Branch) (Terminal arrival),Harlem,41.87349,-87.806961
-30004,Harlem (Terminal arrival),Harlem/Lake,41.886848,-87.803176
-30003,Harlem (63rd-bound),Harlem/Lake,41.886848,-87.803176
-30166,H.W. Library (Inner Loop),Harold Washington Library-State/Van Buren,41.876862,-87.628196
-30165,H.W. Library (Outer Loop),Harold Washington Library-State/Van Buren,41.876862,-87.628196
-30286,Harrison (95th-bound),Harrison,41.874039,-87.627479
-30285,Harrison (Howard-bound),Harrison,41.874039,-87.627479
-30176,Howard (Terminal arrival),Howard,42.019063,-87.672892
-30173,Howard (Terminal arrival),Howard,42.019063,-87.672892
-30174,Howard (95th-Bound),Howard,42.019063,-87.672892
-30175,Howard (Linden- Skokie-bound),Howard,42.019063,-87.672892
-30158,Illinois Medical District (Forest Pk-bound),Illinois Medical District,41.875706,-87.673932
-30157,Illinois Medical District (O'Hare-bound),Illinois Medical District,41.875706,-87.673932
-30059,Indiana (63rd-bound),Indiana,41.821732,-87.621371
-30058,Indiana (Harlem-bound),Indiana,41.821732,-87.621371
-30108,Irving Park (O'Hare Branch) (Forest Pk-bound),Irving Park,41.952925,-87.729229
-30107,Irving Park (O'Hare Branch) (O'Hare-bound),Irving Park,41.952925,-87.729229
-30281,Irving Park (Kimball-bound),Irving Park,41.954521,-87.674868
-30282,Irving Park (Loop-bound),Irving Park,41.954521,-87.674868
-30015,Jackson/Dearborn (Forest Pk-bound),Jackson,41.878183,-87.629296
-30014,Jackson/Dearborn (O'Hare-bound),Jackson,41.878183,-87.629296
-30110,Jackson/State (95th-bound),Jackson,41.878153,-87.627596
-30109,Jackson/State (Howard-bound),Jackson,41.878153,-87.627596
-30228,Jarvis (95th-bound),Jarvis,42.015876,-87.669092
-30227,Jarvis (Howard-bound),Jarvis,42.015876,-87.669092
-30248,Jefferson Park (Forest Pk-bound),Jefferson Park,41.970634,-87.760892
-30247,Jefferson Park (O'Hare-bound),Jefferson Park,41.970634,-87.760892
-30219,Kedzie (Loop-bound),Kedzie,41.804236,-87.704406
-30220,Kedzie (Midway-bound),Kedzie,41.804236,-87.704406
-30202,Kedzie (54th/Cermak-bound),Kedzie,41.853964,-87.705408
-30201,Kedzie (Loop-bound),Kedzie,41.853964,-87.705408
-30225,Kedzie (Kimball-bound),Kedzie,41.965996,-87.708821
-30226,Kedzie (Loop-bound),Kedzie,41.965996,-87.708821
-30207,Kedzie (63rd-bound),Kedzie,41.884321,-87.706155
-30208,Kedzie (Harlem-bound),Kedzie,41.884321,-87.706155
-30049,Kedzie-Homan (Forest Pk-bound),Kedzie-Homan,41.874341,-87.70604
-30048,Kedzie-Homan (O'Hare-bound),Kedzie-Homan,41.874341,-87.70604
-30250,Kimball (Loop-bound),Kimball,41.967901,-87.713065
-30249,Kimball (Terminal arrival),Kimball,41.967901,-87.713065
-30217,King Drive (Cottage Grove-bound),King Drive,41.78013,-87.615546
-30218,King Drive (Harlem-bound),King Drive,41.78013,-87.615546
-30118,Kostner (54th/Cermak-bound),Kostner,41.853751,-87.733258
-30117,Kostner (Loop-bound),Kostner,41.853751,-87.733258
-30290,Lake (95th-bound),Lake,41.884809,-87.627813
-30289,Lake (Howard-bound),Lake,41.884809,-87.627813
-30135,Laramie (63rd-bound),Laramie,41.887163,-87.754986
-30136,Laramie (Harlem-bound),Laramie,41.887163,-87.754986
-30262,LaSalle (Forest Pk-bound),LaSalle,41.875568,-87.631722
-30261,LaSalle (O'Hare-bound),LaSalle,41.875568,-87.631722
-30031,LaSalle/Van Buren (Inner Loop),LaSalle/Van Buren,41.8768,-87.631739
-30030,LaSalle/Van Buren (Outer Loop),LaSalle/Van Buren,41.8768,-87.631739
-30150,Lawrence (95th-bound),Lawrence,41.969139,-87.658493
-30149,Lawrence (Howard-bound),Lawrence,41.969139,-87.658493
-30204,Linden (Howard-Loop-bound),Linden,42.073153,-87.69073
-30203,Linden (Linden-bound),Linden,42.073153,-87.69073
-30198,Logan Square (Forest Pk-bound),Logan Square,41.929728,-87.708541
-30197,Logan Square (O'Hare-bound),Logan Square,41.929728,-87.708541
-30252,Loyola (95th-bound),Loyola,42.001073,-87.661061
-30251,Loyola (Howard-bound),Loyola,42.001073,-87.661061
-30053,Main (Howard-Loop-bound),Main,42.033456,-87.679538
-30052,Main (Linden-bound),Main,42.033456,-87.679538
-30090,Merchandise Mart (Kimball-Linden-bound),Merchandise Mart,41.888969,-87.633924
-30091,Merchandise Mart (Loop-bound),Merchandise Mart,41.888969,-87.633924
-30182,Midway (Arrival),Midway,41.78661,-87.737875
-30181,Midway (Loop-bound),Midway,41.78661,-87.737875
-30154,Monroe (Forest Pk-bound),Monroe,41.880703,-87.629378
-30212,Monroe (95th-bound),Monroe,41.880745,-87.627696
-30211,Monroe (Howard-bound),Monroe,41.880745,-87.627696
-30153,Monroe (O'Hare-bound),Monroe,41.880703,-87.629378
-30260,Montrose (Forest Pk-bound),Montrose,41.961539,-87.743574
-30259,Montrose (O'Hare-bound),Montrose,41.961539,-87.743574
-30287,Montrose (Kimball-bound),Montrose,41.961756,-87.675047
-30288,Montrose (Loop-bound),Montrose,41.961756,-87.675047
-30296,Morgan (Harlem-54th/Cermak-bound),Morgan,41.885586,-87.652193
-30295,Morgan (Loop-63rd-bound),Morgan,41.885586,-87.652193
-30021,Morse (95th-bound),Morse,42.008362,-87.665909
-30020,Morse (Howard-bound),Morse,42.008362,-87.665909
-30126,North/Clybourn (95th-bound),North/Clybourn,41.910655,-87.649177
-30125,North/Clybourn (Howard-bound),North/Clybourn,41.910655,-87.649177
-30079,Noyes (Howard-Loop-bound),Noyes,42.058282,-87.683337
-30078,Noyes (Linden-bound),Noyes,42.058282,-87.683337
-30035,Oak Park (Forest Pk-bound),Oak Park,41.872108,-87.791602
-30034,Oak Park (O'Hare-bound),Oak Park,41.872108,-87.791602
-30263,Oak Park (63rd-bound),Oak Park,41.886988,-87.793783
-30264,Oak Park (Harlem-bound),Oak Park,41.886988,-87.793783
-30297,Oakton-Skokie (Dempster-Skokie-bound),Oakton-Skokie,42.02624348,-87.74722084
-30298,Oakton-Skokie (Howard-bound),Oakton-Skokie,42.02624348,-87.74722084
-30172,O'Hare (Forest Pk-bound),O'Hare,41.97766526,-87.90422307
-30171,O'Hare (Terminal Arrival),O'Hare,41.97766526,-87.90422307
-30253,Paulina (Kimball-bound),Paulina,41.943623,-87.670907
-30254,Paulina (Loop-bound),Paulina,41.943623,-87.670907
-30200,Polk (54th/Cermak-bound),Polk,41.871551,-87.66953
-30199,Polk (Loop-bound),Polk,41.871551,-87.66953
-30185,Pulaski (Loop-bound),Pulaski,41.799756,-87.724493
-30186,Pulaski (Midway-bound),Pulaski,41.799756,-87.724493
-30029,Pulaski (54th/Cermak-bound),Pulaski,41.853732,-87.724311
-30028,Pulaski (Loop-bound),Pulaski,41.853732,-87.724311
-30180,Pulaski (Forest Pk-bound),Pulaski,41.873797,-87.725663
-30179,Pulaski (O'Hare-bound),Pulaski,41.873797,-87.725663
-30005,Pulaski (63rd-bound),Pulaski,41.885412,-87.725404
-30006,Pulaski (Harlem-bound),Pulaski,41.885412,-87.725404
-30007,Quincy/Wells (Inner Loop),Quincy/Wells,41.878723,-87.63374
-30008,Quincy/Wells (Outer Loop),Quincy/Wells,41.878723,-87.63374
-30093,Racine (Forest Pk-bound),Racine,41.87592,-87.659458
-30092,Racine (O'Hare-bound),Racine,41.87592,-87.659458
-30119,Ridgeland (63rd-bound),Ridgeland,41.887159,-87.783661
-30120,Ridgeland (Harlem-bound),Ridgeland,41.887159,-87.783661
-30195,Rockwell (Kimball-bound),Rockwell,41.966115,-87.6941
-30196,Rockwell (Loop-bound),Rockwell,41.966115,-87.6941
-30080,Roosevelt (Loop-Harlem-bound),Roosevelt,41.867405,-87.62659
-30269,Roosevelt (Howard-bound),Roosevelt,41.867368,-87.627402
-30081,Roosevelt (Midway-63rd-bound),Roosevelt,41.867405,-87.62659
-30270,Roosevelt (95th-bound),Roosevelt,41.867368,-87.627402
-30160,Rosemont (Forest Pk-bound),Rosemont,41.983507,-87.859388
-30159,Rosemont (O'Hare-bound),Rosemont,41.983507,-87.859388
-30155,Sedgwick (Kimball-Linden-bound),Sedgwick,41.910409,-87.639302
-30156,Sedgwick (Loop-bound),Sedgwick,41.910409,-87.639302
-30017,Sheridan (95th-bound),Sheridan,41.953775,-87.654929
-30016,Sheridan (Howard-bound),Sheridan,41.953775,-87.654929
-30293,Sheridan (Howard-Linden-bound),Sheridan,41.953775,-87.654929
-30294,Sheridan (Loop-bound),Sheridan,41.953775,-87.654929
-30164,South Blvd (Howard-Loop-bound),South Boulevard,42.027612,-87.678329
-30163,South Blvd (Linden-bound),South Boulevard,42.027612,-87.678329
-30070,Southport (Kimball-bound),Southport,41.943744,-87.663619
-30071,Southport (Loop-bound),Southport,41.943744,-87.663619
-30037,Sox-35th (95th-bound),Sox-35th,41.831191,-87.630636
-30036,Sox-35th (Howard-bound),Sox-35th,41.831191,-87.630636
-30050,State/Lake (Inner Loop),State/Lake,41.88574,-87.627835
-30051,State/Lake (Outer Loop),State/Lake,41.88574,-87.627835
-30170,Thorndale (95th-bound),Thorndale,41.990259,-87.659076
-30169,Thorndale (Howard-bound),Thorndale,41.990259,-87.659076
-30069,UIC-Halsted (Forest Pk-bound),UIC-Halsted,41.875474,-87.649707
-30068,UIC-Halsted (O'Hare-bound),UIC-Halsted,41.875474,-87.649707
-30073,Washington (Forest Pk-bound),Washington,41.883164,-87.62944
-30072,Washington (O'Hare-bound),Washington,41.883164,-87.62944
-30384,Washington/Wabash (Inner Loop),Washington/Wabash,41.88322,-87.626189
-30383,Washington/Wabash (Outer Loop),Washington/Wabash,41.88322,-87.626189
-30141,Washington/Wells (Inner Loop),Washington/Wells,41.882695,-87.63378
-30142,Washington/Wells (Outer Loop),Washington/Wells,41.882695,-87.63378
-30231,Wellington (Kimball-Linden-bound),Wellington,41.936033,-87.653266
-30232,Wellington (Loop-bound),Wellington,41.936033,-87.653266
-30060,Western (Loop-bound),Western,41.804546,-87.684019
-30061,Western (Midway-bound),Western,41.804546,-87.684019
-30144,Western (54th/Cermak-bound),Western,41.854225,-87.685129
-30143,Western (Loop-bound),Western,41.854225,-87.685129
-30283,Western (Kimball-bound),Western,41.966163,-87.688502
-30284,Western (Loop-bound),Western,41.966163,-87.688502
-30130,Western (O'Hare Branch) (Forest Pk-bound),Western,41.916157,-87.687364
-30042,Western (Forest Pk Branch) (O'Hare-bound),Western,41.875478,-87.688436
-30043,Western (Forest Pk Branch) (Forest Pk-bound),Western,41.875478,-87.688436
-30129,Western (O'Hare Branch) (O'Hare-bound),Western,41.916157,-87.687364
-30386,Wilson (Linden-bound),Wilson,41.964273,-87.657588
-30105,Wilson (Howard-bound),Wilson,41.964273,-87.657588
-30106,Wilson (95th-bound),Wilson,41.964273,-87.657588
-30385,Wilson (Loop-bound),Wilson,41.964273,-87.657588
+STATION_NAME,MAP_ID,Location X,Location Y
+18th,40830,41.857908,-87.669147
+18th,40830,41.857908,-87.669147
+35th/Archer,40120,41.829353,-87.680622
+35th/Archer,40120,41.829353,-87.680622
+35th-Bronzeville-IIT,41120,41.831677,-87.625826
+35th-Bronzeville-IIT,41120,41.831677,-87.625826
+43rd,41270,41.816462,-87.619021
+43rd,41270,41.816462,-87.619021
+47th,41080,41.809209,-87.618826
+47th,41080,41.809209,-87.618826
+47th,41230,41.810318,-87.63094
+47th,41230,41.810318,-87.63094
+51st,40130,41.80209,-87.618487
+51st,40130,41.80209,-87.618487
+54th/Cermak,40580,41.85177331,-87.75669201
+54th/Cermak,40580,41.85177331,-87.75669201
+63rd,40910,41.780536,-87.630952
+63rd,40910,41.780536,-87.630952
+69th,40990,41.768367,-87.625724
+69th,40990,41.768367,-87.625724
+79th,40240,41.750419,-87.625112
+79th,40240,41.750419,-87.625112
+87th,41430,41.735372,-87.624717
+87th,41430,41.735372,-87.624717
+95th/Dan Ryan,40450,41.722377,-87.624342
+95th/Ran Ryan,40450,41.722377,-87.624342
+Adams/Wabash,40680,41.879507,-87.626037
+Adams/Wabash,40680,41.879507,-87.626037
+Addison,41440,41.947028,-87.674642
+Addison,41440,41.947028,-87.674642
+Addison,41420,41.947428,-87.653626
+Addison,41420,41.947428,-87.653626
+Addison,41240,41.94738,-87.71906
+Addison,41240,41.94738,-87.71906
+Argyle,41200,41.973453,-87.65853
+Argyle,41200,41.973453,-87.65853
+Armitage,40660,41.918217,-87.652644
+Armitage,40660,41.918217,-87.652644
+Ashland,41060,41.839234,-87.665317
+Ashland,41060,41.839234,-87.665317
+Ashland,40170,41.885269,-87.666969
+Ashland,40170,41.885269,-87.666969
+Ashland/63rd,40290,41.77886,-87.663766
+Ashland/63rd,40290,41.77886,-87.663766
+Austin,40010,41.870851,-87.776812
+Austin,40010,41.870851,-87.776812
+Austin,41260,41.887293,-87.774135
+Austin,41260,41.887293,-87.774135
+Belmont,40060,41.938132,-87.712359
+Belmont,40060,41.938132,-87.712359
+Belmont,41320,41.939751,-87.65338
+Belmont,41320,41.939751,-87.65338
+Belmont,41320,41.939751,-87.65338
+Belmont,41320,41.939751,-87.65338
+Berwyn,40340,41.977984,-87.658668
+Berwyn,40340,41.977984,-87.658668
+Bryn Mawr,41380,41.983504,-87.65884
+Bryn Mawr,41380,41.983504,-87.65884
+California,40440,41.854109,-87.694774
+California,40440,41.854109,-87.694774
+California,41360,41.88422,-87.696234
+California,41360,41.88422,-87.696234
+California,40570,41.921939,-87.69689
+California,40570,41.921939,-87.69689
+Central,40280,41.887389,-87.76565
+Central,40280,41.887389,-87.76565
+Central,41250,42.063987,-87.685617
+Central,41250,42.063987,-87.685617
+Central Park,40780,41.853839,-87.714842
+Central Park,40780,41.853839,-87.714842
+Cermak-Chinatown,41000,41.853206,-87.630968
+Cermak-Chinatown,41000,41.853206,-87.630968
+Cermak-McCormick Place,41690,41.853115,-87.626402
+Cermak-McCormick Place,41690,41.853115,-87.626402
+Chicago,41410,41.896075,-87.655214
+Chicago,40710,41.89681,-87.635924
+Chicago,40710,41.89681,-87.635924
+Chicago,41450,41.896671,-87.628176
+Chicago,41450,41.896671,-87.628176
+Chicago,41410,41.896075,-87.655214
+Cicero,40420,41.85182,-87.745336
+Cicero,40420,41.85182,-87.745336
+Cicero,40970,41.871574,-87.745154
+Cicero,40970,41.871574,-87.745154
+Cicero,40480,41.886519,-87.744698
+Cicero,40480,41.886519,-87.744698
+Clark/Division,40630,41.90392,-87.631412
+Clark/Division,40630,41.90392,-87.631412
+Clark/Lake,40380,41.885737,-87.630886
+Clark/Lake,40380,41.885737,-87.630886
+Clark/Lake,40380,41.885737,-87.630886
+Clark/Lake,40380,41.885737,-87.630886
+Clinton,40430,41.875539,-87.640984
+Clinton,40430,41.875539,-87.640984
+Clinton,41160,41.885678,-87.641782
+Clinton,41160,41.885678,-87.641782
+Conservatory,41670,41.884904,-87.716523
+Conservatory,41670,41.884904,-87.716523
+Cottage Grove,40720,41.780309,-87.605857
+Cottage Grove,40720,41.780309,-87.605857
+Cumberland,40230,41.984246,-87.838028
+Cumberland,40230,41.984246,-87.838028
+Damen,40210,41.854517,-87.675975
+Damen,40210,41.854517,-87.675975
+Damen,40590,41.909744,-87.677437
+Damen,40590,41.909744,-87.677437
+Damen,40090,41.966286,-87.678639
+Damen,40090,41.966286,-87.678639
+Davis,40050,42.04771,-87.683543
+Davis,40050,42.04771,-87.683543
+Dempster,40690,42.041655,-87.681602
+Dempster,40690,42.041655,-87.681602
+Dempster-Skokie,40140,42.038951,-87.751919
+Dempster-Skokie,40140,42.038951,-87.751919
+Diversey,40530,41.932732,-87.653131
+Diversey,40530,41.932732,-87.653131
+Division,40320,41.903355,-87.666496
+Division,40320,41.903355,-87.666496
+Forest Park,40390,41.874257,-87.817318
+Forest Park,40390,41.874257,-87.817318
+Foster,40520,42.05416,-87.68356
+Foster,40520,42.05416,-87.68356
+Francisco,40870,41.966046,-87.701644
+Francisco,40870,41.966046,-87.701644
+Fullerton,41220,41.925051,-87.652866
+Fullerton,41220,41.925051,-87.652866
+Fullerton,41220,41.925051,-87.652866
+Fullerton,41220,41.925051,-87.652866
+Garfield,40510,41.795172,-87.618327
+Garfield,40510,41.795172,-87.618327
+Garfield,41170,41.79542,-87.631157
+Garfield,41170,41.79542,-87.631157
+Grand,40490,41.891189,-87.647578
+Grand,40490,41.891189,-87.647578
+Grand,40330,41.891665,-87.628021
+Grand,40330,41.891665,-87.628021
+Granville,40760,41.993664,-87.659202
+Granville,40760,41.993664,-87.659202
+Halsted,41130,41.84678,-87.648088
+Halsted,41130,41.84678,-87.648088
+Halsted,40940,41.778943,-87.644244
+Halsted,40940,41.778943,-87.644244
+Harlem,40750,41.98227,-87.8089
+Harlem,40750,41.98227,-87.8089
+Harlem,40980,41.87349,-87.806961
+Harlem,40980,41.87349,-87.806961
+Harlem/Lake,40020,41.886848,-87.803176
+Harlem/Lake,40020,41.886848,-87.803176
+Harold Washington Library-State/Van Buren,40850,41.876862,-87.628196
+Harold Washington Library-State/Van Buren,40850,41.876862,-87.628196
+Harrison,41490,41.874039,-87.627479
+Harrison,41490,41.874039,-87.627479
+Howard,40900,42.019063,-87.672892
+Howard,40900,42.019063,-87.672892
+Howard,40900,42.019063,-87.672892
+Howard,40900,42.019063,-87.672892
+Illinois Medical District,40810,41.875706,-87.673932
+Illinois Medical District,40810,41.875706,-87.673932
+Indiana,40300,41.821732,-87.621371
+Indiana,40300,41.821732,-87.621371
+Irving Park,40550,41.952925,-87.729229
+Irving Park,40550,41.952925,-87.729229
+Irving Park,41460,41.954521,-87.674868
+Irving Park,41460,41.954521,-87.674868
+Jackson,40070,41.878183,-87.629296
+Jackson,40070,41.878183,-87.629296
+Jackson,40560,41.878153,-87.627596
+Jackson,40560,41.878153,-87.627596
+Jarvis,41190,42.015876,-87.669092
+Jarvis,41190,42.015876,-87.669092
+Jefferson Park,41280,41.970634,-87.760892
+Jefferson Park,41280,41.970634,-87.760892
+Kedzie,41150,41.804236,-87.704406
+Kedzie,41150,41.804236,-87.704406
+Kedzie,41040,41.853964,-87.705408
+Kedzie,41040,41.853964,-87.705408
+Kedzie,41180,41.965996,-87.708821
+Kedzie,41180,41.965996,-87.708821
+Kedzie,41070,41.884321,-87.706155
+Kedzie,41070,41.884321,-87.706155
+Kedzie-Homan,40250,41.874341,-87.70604
+Kedzie-Homan,40250,41.874341,-87.70604
+Kimball,41290,41.967901,-87.713065
+Kimball,41290,41.967901,-87.713065
+King Drive,41140,41.78013,-87.615546
+King Drive,41140,41.78013,-87.615546
+Kostner,40600,41.853751,-87.733258
+Kostner,40600,41.853751,-87.733258
+Lake,41660,41.884809,-87.627813
+Lake,41660,41.884809,-87.627813
+Laramie,40700,41.887163,-87.754986
+Laramie,40700,41.887163,-87.754986
+LaSalle,41340,41.875568,-87.631722
+LaSalle,41340,41.875568,-87.631722
+LaSalle/Van Buren,40160,41.8768,-87.631739
+LaSalle/Van Buren,40160,41.8768,-87.631739
+Lawrence,40770,41.969139,-87.658493
+Lawrence,40770,41.969139,-87.658493
+Linden,41050,42.073153,-87.69073
+Linden,41050,42.073153,-87.69073
+Logan Square,41020,41.929728,-87.708541
+Logan Square,41020,41.929728,-87.708541
+Loyola,41300,42.001073,-87.661061
+Loyola,41300,42.001073,-87.661061
+Main,40270,42.033456,-87.679538
+Main,40270,42.033456,-87.679538
+Merchandise Mart,40460,41.888969,-87.633924
+Merchandise Mart,40460,41.888969,-87.633924
+Midway,40930,41.78661,-87.737875
+Midway,40930,41.78661,-87.737875
+Monroe,40790,41.880703,-87.629378
+Monroe,41090,41.880745,-87.627696
+Monroe,41090,41.880745,-87.627696
+Monroe,40790,41.880703,-87.629378
+Montrose,41330,41.961539,-87.743574
+Montrose,41330,41.961539,-87.743574
+Montrose,41500,41.961756,-87.675047
+Montrose,41500,41.961756,-87.675047
+Morgan,41510,41.885586,-87.652193
+Morgan,41510,41.885586,-87.652193
+Morse,40100,42.008362,-87.665909
+Morse,40100,42.008362,-87.665909
+North/Clybourn,40650,41.910655,-87.649177
+North/Clybourn,40650,41.910655,-87.649177
+Noyes,40400,42.058282,-87.683337
+Noyes,40400,42.058282,-87.683337
+Oak Park,40180,41.872108,-87.791602
+Oak Park,40180,41.872108,-87.791602
+Oak Park,41350,41.886988,-87.793783
+Oak Park,41350,41.886988,-87.793783
+Oakton-Skokie,41680,42.02624348,-87.74722084
+Oakton-Skokie,41680,42.02624348,-87.74722084
+O'Hare,40890,41.97766526,-87.90422307
+O'Hare,40890,41.97766526,-87.90422307
+Paulina,41310,41.943623,-87.670907
+Paulina,41310,41.943623,-87.670907
+Polk,41030,41.871551,-87.66953
+Polk,41030,41.871551,-87.66953
+Pulaski,40960,41.799756,-87.724493
+Pulaski,40960,41.799756,-87.724493
+Pulaski,40150,41.853732,-87.724311
+Pulaski,40150,41.853732,-87.724311
+Pulaski,40920,41.873797,-87.725663
+Pulaski,40920,41.873797,-87.725663
+Pulaski,40030,41.885412,-87.725404
+Pulaski,40030,41.885412,-87.725404
+Quincy/Wells,40040,41.878723,-87.63374
+Quincy/Wells,40040,41.878723,-87.63374
+Racine,40470,41.87592,-87.659458
+Racine,40470,41.87592,-87.659458
+Ridgeland,40610,41.887159,-87.783661
+Ridgeland,40610,41.887159,-87.783661
+Rockwell,41010,41.966115,-87.6941
+Rockwell,41010,41.966115,-87.6941
+Roosevelt,41400,41.867405,-87.62659
+Roosevelt,41400,41.867368,-87.627402
+Roosevelt,41400,41.867405,-87.62659
+Roosevelt,41400,41.867368,-87.627402
+Rosemont,40820,41.983507,-87.859388
+Rosemont,40820,41.983507,-87.859388
+Sedgwick,40800,41.910409,-87.639302
+Sedgwick,40800,41.910409,-87.639302
+Sheridan,40080,41.953775,-87.654929
+Sheridan,40080,41.953775,-87.654929
+Sheridan,40080,41.953775,-87.654929
+Sheridan,40080,41.953775,-87.654929
+South Boulevard,40840,42.027612,-87.678329
+South Boulevard,40840,42.027612,-87.678329
+Southport,40360,41.943744,-87.663619
+Southport,40360,41.943744,-87.663619
+Sox-35th,40190,41.831191,-87.630636
+Sox-35th,40190,41.831191,-87.630636
+State/Lake,40260,41.88574,-87.627835
+State/Lake,40260,41.88574,-87.627835
+Thorndale,40880,41.990259,-87.659076
+Thorndale,40880,41.990259,-87.659076
+UIC-Halsted,40350,41.875474,-87.649707
+UIC-Halsted,40350,41.875474,-87.649707
+Washington,40370,41.883164,-87.62944
+Washington,40370,41.883164,-87.62944
+Washington/Wabash,41700,41.88322,-87.626189
+Washington/Wabash,41700,41.88322,-87.626189
+Washington/Wells,40730,41.882695,-87.63378
+Washington/Wells,40730,41.882695,-87.63378
+Wellington,41210,41.936033,-87.653266
+Wellington,41210,41.936033,-87.653266
+Western,40310,41.804546,-87.684019
+Western,40310,41.804546,-87.684019
+Western,40740,41.854225,-87.685129
+Western,40740,41.854225,-87.685129
+Western,41480,41.966163,-87.688502
+Western,41480,41.966163,-87.688502
+Western,40670,41.916157,-87.687364
+Western,40220,41.875478,-87.688436
+Western,40220,41.875478,-87.688436
+Western,40670,41.916157,-87.687364
+Wilson,40540,41.964273,-87.657588
+Wilson,40540,41.964273,-87.657588
+Wilson,40540,41.964273,-87.657588
+Wilson,40540,41.964273,-87.657588

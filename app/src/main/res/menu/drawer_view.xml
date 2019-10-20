@@ -8,6 +8,10 @@
             android:icon="@android:drawable/ic_dialog_map"
             android:title="@string/tracker" />
         <item
+            android:id="@+id/launch_cards"
+            android:icon="@drawable/ic_ventra_card"
+            android:title="@string/cards" />
+        <item
             android:id="@+id/launch_twitter"
             android:icon="@android:drawable/ic_dialog_email"
             android:title="@string/ctatwitter" />

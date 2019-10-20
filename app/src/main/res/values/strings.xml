@@ -16,6 +16,7 @@
 
     <string name="app_name">Ventra 2</string>
     <string name="tracker">Tracker</string>
+    <string name="cards">My Ventra Cards</string>
     <string name="timetable">Time Table</string>
     <string name="ctatwitter">CTA Twitter</string>
     <string name="reportemergency">Report Emergency</string>

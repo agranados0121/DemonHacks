@@ -25,7 +25,7 @@ public class ReportFragment extends Fragment
         super.onCreate(bundle);
 
         // retain this fragment across activity reconfigs
-        setRetainInstance(true);
+        // setRetainInstance(true);
     }
 
     @Override
@@ -64,6 +64,7 @@ public class ReportFragment extends Fragment
         });
     }
 
+
     @Override
     public void onActivityResult(int reqCode, int resCode, Intent data)
     {
@@ -73,7 +74,7 @@ public class ReportFragment extends Fragment
             super.onActivityResult(reqCode, resCode, data);
 
             // get the image as a bitmap
-            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+            final Bitmap bitmap = (Bitmap) data.getExtras().get("data");
 
             // revert alpha back to normal and assign the bitmap to the imageview
             cameraImage.setAlpha(1.0f);
@@ -120,7 +121,10 @@ public class ReportFragment extends Fragment
 
                     // start the activity
                     //startActivity(intent, bundle);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("picture", bitmap);
                     Fragment fragment = new SubmitReportFragment();
+                    fragment.setArguments(bundle);
 
                     FragmentTransaction transaction = getFragmentManager().beginTransaction();
 

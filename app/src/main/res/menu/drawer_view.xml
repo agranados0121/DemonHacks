@@ -12,10 +12,6 @@
             android:icon="@drawable/ic_ventra_card"
             android:title="@string/cards" />
         <item
-            android:id="@+id/launch_twitter"
-            android:icon="@android:drawable/ic_dialog_email"
-            android:title="@string/ctatwitter" />
-        <item
             android:id="@+id/launch_reportemergency"
             android:icon="@android:drawable/ic_dialog_alert"
             android:title="@string/reportemergency" />

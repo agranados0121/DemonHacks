@@ -56,14 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
                                 menuDrawer.closeDrawers();
                                 return true;
-                            case R.id.launch_timetable:
-                                // fragment for timetable
-                                Log.i(ACTIVITYTAG, "time table pressed");
-
-                                //code here
-
-                                menuDrawer.closeDrawers();
-                                return true;
                             case R.id.launch_twitter:
                                 // fragment for cta twitter
                                 Log.i(ACTIVITYTAG, "twitter pressed");
@@ -85,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                                     ft.commit();
                                     // force android to execute the committed transaction
                                     //ft.executePendingTransactions();
+
                                 }
 
                                 menuDrawer.closeDrawers();

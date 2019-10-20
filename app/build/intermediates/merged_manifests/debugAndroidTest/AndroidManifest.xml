@@ -3,7 +3,7 @@
     package="com.example.demonhacks.test" >
 
     <uses-sdk
-        android:minSdkVersion="27"
+        android:minSdkVersion="26"
         android:targetSdkVersion="29" />
 
     <instrumentation

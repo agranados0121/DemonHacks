@@ -140,6 +140,8 @@ public class ReportActivity extends AppCompatActivity
                 {
                     Intent intent = new Intent(getApplicationContext(), SubmitReportActivity.class);
 
+                    //
+                    intent.putExtra("reportImage", cameraImage.getId());
                     // save into the bundle the animations so that when the splash screen
                     // transitions to the title screen,
                     // the animation plays out smoothly

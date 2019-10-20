@@ -26,8 +26,8 @@
 18        android:supportsRtl="true"
 18-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
-20        android:theme="@style/Theme.AppCompat.NoActionBar" >
-20-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:9-59
+20        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+20-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:9-68
 21        <activity
 21-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:9-19:20
 22            android:name="com.example.demonhacks.SplashScreenActivity"
@@ -49,12 +49,17 @@
 29            </intent-filter>
 30        </activity>
 31        <activity
-31-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:9-23:20
+31-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:9-88
 32            android:name="com.example.demonhacks.ReportActivity"
 32-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:19-49
-33            android:screenOrientation="portrait" >
+33            android:screenOrientation="portrait" />
 33-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:50-86
-34        </activity>
-35    </application>
-36
-37</manifest>
+34        <activity
+34-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:9-94
+35            android:name="com.example.demonhacks.SubmitReportActivity"
+35-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:19-55
+36            android:screenOrientation="portrait" />
+36-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:56-92
+37    </application>
+38
+39</manifest>

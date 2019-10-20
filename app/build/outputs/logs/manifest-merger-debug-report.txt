@@ -69,7 +69,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Co
 	android:allowBackup
 		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:9-59
+		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:9-68
 activity#com.example.demonhacks.SplashScreenActivity
 ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:12:9-19:20
 	android:screenOrientation
@@ -91,11 +91,17 @@ ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:17:1
 	android:name
 		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:17:27-74
 activity#com.example.demonhacks.ReportActivity
-ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:9-23:20
+ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:9-88
 	android:screenOrientation
 		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:50-86
 	android:name
 		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:21:19-49
+activity#com.example.demonhacks.SubmitReportActivity
+ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:9-94
+	android:screenOrientation
+		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:56-92
+	android:name
+		ADDED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:19-55
 uses-sdk
 INJECTED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml

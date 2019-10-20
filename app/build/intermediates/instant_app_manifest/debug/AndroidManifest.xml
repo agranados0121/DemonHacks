@@ -18,7 +18,7 @@
         android:roundIcon="@drawable/ventra2"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
             android:name="com.example.demonhacks.SplashScreenActivity"
             android:screenOrientation="portrait" >
@@ -31,8 +31,10 @@
         </activity>
         <activity
             android:name="com.example.demonhacks.ReportActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.demonhacks.SubmitReportActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

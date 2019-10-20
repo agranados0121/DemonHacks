@@ -8,7 +8,7 @@
         android:label="Definitely not the real Ventra app"
         android:roundIcon="@drawable/ventra2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity android:name=".SplashScreenActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ReportActivity" android:screenOrientation="portrait">
+        <activity android:name=".ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SubmitReportActivity" android:screenOrientation="portrait"/>
 
-        </activity>
     </application>
 
 

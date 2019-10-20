@@ -17,9 +17,16 @@
         android:roundIcon="@drawable/ventra2"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        <activity android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
+        <activity android:name=".SplashScreenActivity" android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -34,24 +41,19 @@
 
         <activity
             android:name=".TrainMapActivity"
-            android:label="@string/title_activity_train_map"></activity>
-			
-        <activity android:name=".ArrivalsActivity">
+            android:label="@string/title_activity_train_map"/>
 
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".ArrivalsActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ReportActivity" android:screenOrientation="portrait"/>
         <activity android:name=".SubmitReportActivity" android:screenOrientation="portrait"/>
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCGyEm3svNN0-8oZXHE7ZJU7-WTVh48NQ0"/>
 
     </application>
 

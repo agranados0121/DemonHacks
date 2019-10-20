@@ -3,6 +3,8 @@ package com.example.demonhacks;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -59,13 +61,15 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.launch_tracker:
                                 // fragment for tracker
                                 Log.i(ACTIVITYTAG, "launch tracker pressed");
+                                Intent in = new Intent (getApplicationContext(), ArrivalsActivity.class);
 
+                                startActivity(in);
                                 //code here
-                        //        if (!trackerFrag.isAdded()){
-                        //            ft.replace(R.id.flContent, trackerFrag);
-                        //            ft.addToBackStack(null);
-                        //            ft.commit();
-                        //        }
+//                                if (!trackerFrag.isAdded()){
+//                                    ft.replace(R.id.flContent, trackerFrag);
+//                                    ft.addToBackStack(null);
+//                                    ft.commit();
+//                                }
                                 menuDrawer.closeDrawers();
                                 return true;
                             case R.id.launch_cards:

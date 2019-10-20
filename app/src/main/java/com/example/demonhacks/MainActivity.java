@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.appcompat.widget.*;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setHomeButtonEnabled(true);
         ab.setHomeAsUpIndicator(R.drawable.ic_action_name);
+
+        FragmentManager fm = getSupportFragmentManager();
+        final FragmentTransaction ft = fm.beginTransaction();
 
         menuDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView nv = (NavigationView) findViewById(R.id.nv);
@@ -73,7 +78,13 @@ public class MainActivity extends AppCompatActivity {
 
                                 //code here
                                 if(!reptFragment.isAdded()) {
-
+                                    ft.replace(R.id.flContent, reptFragment);
+                                    // add the transaction to the backstack
+                                    ft.addToBackStack(null);
+                                    // commit the transaction
+                                    ft.commit();
+                                    // force android to execute the committed transaction
+                                    //ft.executePendingTransactions();
                                 }
 
                                 menuDrawer.closeDrawers();

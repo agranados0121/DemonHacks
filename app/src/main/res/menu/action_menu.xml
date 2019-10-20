@@ -14,5 +14,4 @@
         android:icon="@android:drawable/btn_star_big_off"
         android:title="@string/reportIssue"
         app:showAsAction="collapseActionView" />
-
 </menu>

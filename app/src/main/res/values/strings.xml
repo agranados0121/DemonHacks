@@ -1,10 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="app_name">DemonHacks Ventra 2</string>
+    <string-array name="reportTypes">
+        <item>Inappropriate Language - Profanity &amp; Adult Content</item>
+        <item>Asking for or Giving Private Information</item>
+        <item>Bullying, Harassment, Discrimination</item>
+        <item>Dating</item>
+        <item>Exploiting, Cheating, Scamming</item>
+        <item>Account Theft - Phishing, Hacking, Trading</item>
+        <item>Inappropriate Content - Place, Image, Model</item>
+        <item>Real Life Threats &amp; Suicide Threats</item>
+        <item>I am in this photo and I do not like it</item>
+        <item>Other rule violation</item>
+    </string-array>
+
+    <string name="app_name">Ventra 2</string>
     <string name="tracker">Tracker</string>
+    <string name="cards">My Ventra Cards</string>
     <string name="timetable">Time Table</string>
     <string name="ctatwitter">CTA Twitter</string>
     <string name="reportemergency">Report Emergency</string>
 
     <string name="help">Help</string>
     <string name="reportIssue">Report Issue</string>
+
+    <string name="cta_api_url">http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=73436616b5af4465bc65790aa9d4886c&amp;mapid=&amp;=40530&amp;outputType=JSON</string>
+    <string name="title_activity_train_map">Map</string>
+    <string name="google_maps_key">AIzaSyBp4x7Cj0FJ0i2FREjAtkWh_Q6s2XE8u2o</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

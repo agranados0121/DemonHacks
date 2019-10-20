@@ -3,6 +3,8 @@ package com.example.demonhacks;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,6 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.widget.*;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private Toolbar appBar;
     private DrawerLayout menuDrawer;
+
+    private ReportFragment reptFragment = new ReportFragment();
+    private ArrivalsFragment arrivalsFragment = new ArrivalsFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         ab.setHomeButtonEnabled(true);
         ab.setHomeAsUpIndicator(R.drawable.ic_action_name);
 
+        final FragmentManager fm = getSupportFragmentManager();
+
+        // DEFAULT FRAGMENT
+        if (!arrivalsFragment.isAdded()){
+            fm.beginTransaction().replace(R.id.flContent, arrivalsFragment)
+            .addToBackStack(null)
+            .commit();
+        }
+
         menuDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView nv = (NavigationView) findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(
@@ -40,26 +56,23 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        final FragmentTransaction ft = fm.beginTransaction();
+                        //fm.popBackStack();
                         switch (menuItem.getItemId()) {
                             case R.id.launch_tracker:
                                 // fragment for tracker
                                 Log.i(ACTIVITYTAG, "launch tracker pressed");
-
                                 //code here
-
+                                if (!arrivalsFragment.isAdded()){
+                                    ft.replace(R.id.flContent, arrivalsFragment);
+                                    ft.addToBackStack(null);
+                                    ft.commit();
+                                }
                                 menuDrawer.closeDrawers();
                                 return true;
-                            case R.id.launch_timetable:
-                                // fragment for timetable
-                                Log.i(ACTIVITYTAG, "time table pressed");
-
-                                //code here
-
-                                menuDrawer.closeDrawers();
-                                return true;
-                            case R.id.launch_twitter:
-                                // fragment for cta twitter
-                                Log.i(ACTIVITYTAG, "twitter pressed");
+                            case R.id.launch_cards:
+                                // fragment for cta cards
+                                Log.i(ACTIVITYTAG, "ventra cards pressed");
 
                                 //code here
 
@@ -70,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i(ACTIVITYTAG, "report emergency pressed");
 
                                 //code here
+                                if(!reptFragment.isAdded()) {
+                                    ft.replace(R.id.flContent, reptFragment);
+                                    // add the transaction to the backstack
+                                    ft.addToBackStack(null);
+                                    // commit the transaction
+                                    ft.commit();
+                                    // force android to execute the committed transaction
+                                    //ft.executePendingTransactions();
+
+                                }
 
                                 menuDrawer.closeDrawers();
                                 return true;

@@ -1,6 +1,7 @@
 package com.example.demonhacks;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ public class RouteViewHolder extends RecyclerView.ViewHolder {
     TextView directionText;
     TextView arrivalsText;
     TextView timeText;
+    ImageView trainImage;
 
     public RouteViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -19,5 +21,6 @@ public class RouteViewHolder extends RecyclerView.ViewHolder {
         directionText = itemView.findViewById(R.id.directionTextView);
         arrivalsText = itemView.findViewById(R.id.arrivalsTextView);
         timeText = itemView.findViewById(R.id.timeTextView);
+        trainImage = itemView.findViewById(R.id.trainImageView);
     }
 }

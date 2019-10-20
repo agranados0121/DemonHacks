@@ -99,13 +99,7 @@ public class JsonParser extends AsyncTask<String, String, String> {
 
             for (int i = 0; i < length; i++) {
                 JSONObject trainJsonObj = jsonArray.getJSONObject(i);
-
-
-
                 String arrivalTime = trainJsonObj.getString("arrT");
-
-                //String[] formattedDate = formatDate(arrivalTime);
-
                 String latitude = trainJsonObj.getString("lat");
                 String longitude = trainJsonObj.getString("lon");
 
@@ -122,7 +116,7 @@ public class JsonParser extends AsyncTask<String, String, String> {
 
                 Route route = new Route(color, stationId, stationName, destination, list);
 
-                if (route.getStationId().equals(requestedStation) && !route.getStationName().equals("See train")) {
+                if (route.getStationId().equals(requestedStation) && !route.getDestination().equals("See train")) {
                     int index = routeCellIndex(route);
                     if (index > -1) {
                         routeList.get(index).getTrains().add(train);

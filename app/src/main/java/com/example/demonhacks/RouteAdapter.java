@@ -1,11 +1,16 @@
 package com.example.demonhacks;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -38,6 +43,12 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
         Log.d(TAG, "onBindViewHolder: POPULATING DATA");
 
         Route selection = routeList.get(position);
+
+        String color = selection.getHexColor();
+        holder.trainImage.setColorFilter(Color.parseColor(color));
+
+        Log.d(TAG, "onBindViewHolder: COLOR" + color);
+
         holder.stationText.setText(selection.getStationName());
         holder.directionText.setText(selection.getDestination());
 
@@ -51,6 +62,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
                 holder.timeText.append(selection.getTrains().get(i).getTimeRemaining() + "\n");
             }
         }
+        holder.directionText.setTextColor(Color.parseColor(color));
     }
 
     @Override

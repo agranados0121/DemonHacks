@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#464646</color>
+    <color name="colorPrimaryDark">#282828</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="trainColorRed">#ed2b15</color>
+    <color name="trainColorBrown">#8B4513	</color>
+    <color name="trainColorPurple">#800080</color>
+    <color name="trainColorBlue">#3E86F5</color>
+    <color name="trainColorGreen">#34B13C</color>
+    <color name="trainColorOrange">#FFA200</color>
+    <color name="trainColorPink">#F19CF5</color>
+    <color name="trainColorYellow">#F1EE17</color>
 </resources>

@@ -14,8 +14,19 @@ public class Route implements Serializable {
     private String stationName;
     private String destination;
     private ArrayList<Train> trains;
+    private String hexColor;
 
     public Route (String line, String stationId, String stationName, String destination, ArrayList<Train> trains) {
+
+        if (line.equals("Brn")) hexColor = "#b38054";
+        else if (line.equals("P")) hexColor = "#800080";
+        else if (line.equals("Red")) hexColor = "#ed2b15";
+        else if (line.equals("Blue")) hexColor = "#3E86F5";
+        else if (line.equals("G")) hexColor = "#34B13C";
+        else if (line.equals("Org")) hexColor = "#FFA200";
+        else if (line.equals("Pink")) hexColor = "#F19CF5";
+        else hexColor = "#F1EE17";
+
         this.line = line;
         this.stationId = stationId;
         this.stationName = stationName;
@@ -41,6 +52,10 @@ public class Route implements Serializable {
 
     public ArrayList<Train> getTrains() {
         return trains;
+    }
+
+    public String getHexColor() {
+        return hexColor;
     }
 
     public boolean sharesRoute(Route route) {

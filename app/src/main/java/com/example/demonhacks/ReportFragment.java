@@ -120,14 +120,16 @@ public class ReportFragment extends Fragment
 
                     // start the activity
                     //startActivity(intent, bundle);
-//                    Fragment fragment = new ReportFragment();
-//
-//                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//
-//                    transaction.replace(R.id.frameLayout, fragment);
-//                    transaction.addToBackStack(null);
-//
-//                    transaction.commit();
+                    Fragment fragment = new SubmitReportFragment();
+
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                    transaction.replace(R.id.flContent, fragment);
+                    transaction.addToBackStack(null);
+
+                    transaction.commit();
+
+                    getActivity().getSupportFragmentManager().beginTransaction().remove(ReportFragment.this).commit();
                 }
             });
         }

@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml
+8-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml
+9-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml
 10
 11    <!--
 12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -16,62 +16,62 @@
 14         location permissions for the 'MyLocation' functionality.
 15    -->
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:10:5-79
-16-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:10:22-76
+16-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:10:5-79
+16-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:11:5-67
-17-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:11:22-64
+17-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:5-67
+17-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:11:22-64
 18
 19    <!-- Include required permissions for Google Maps API to run. -->
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
-20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:22-76
+20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:22-76
 21
 22    <uses-feature
-22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
 23        android:glEsVersion="0x00020000"
-23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+23-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
 24        android:required="true" />
-24-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+24-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
 25
 26    <application
-26-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:13:5-58:19
+26-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:13:5-58:19
 27        android:allowBackup="true"
-27-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:14:9-35
+27-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:14:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+28-->[androidx.core:core:1.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
 29        android:debuggable="true"
 30        android:icon="@drawable/ventra2"
-30-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:15:9-41
+30-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:15:9-41
 31        android:label="@string/app_name"
-31-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:16:9-41
+31-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:16:9-41
 32        android:roundIcon="@drawable/ventra2"
-32-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:17:9-46
+32-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:17:9-46
 33        android:supportsRtl="true"
-33-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:18:9-35
+33-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:18:9-35
 34        android:testOnly="true"
 35        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-35-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:20:9-68
+35-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:20:9-68
 36        android:usesCleartextTraffic="true" >
-36-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:19:9-44
+36-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:19:9-44
 37        <activity
-37-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:22:9-29:20
+37-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:9-29:20
 38            android:name="com.example.demonhacks.SplashScreenActivity"
-38-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:22:19-55
+38-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:19-55
 39            android:screenOrientation="portrait" >
-39-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:22:56-92
+39-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:22:56-92
 40            <intent-filter>
-40-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:23:13-28:29
+40-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:23:13-28:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:24:17-69
-41-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:24:25-66
+41-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:24:17-69
+41-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:24:25-66
 42                <action android:name="android.intent.action.VIEW" />
-42-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:25:17-69
-42-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:25:25-66
+42-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:25:17-69
+42-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:25:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:27:17-77
-44-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:27:27-74
+44-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:27:17-77
+44-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:27:27-74
 45            </intent-filter>
 46        </activity>
 47        <!--
@@ -83,77 +83,77 @@
 53             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 54        -->
 55        <meta-data
-55-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:38:9-40:55
+55-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:38:9-40:55
 56            android:name="com.google.android.geo.API_KEY"
-56-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:39:13-58
+56-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:39:13-58
 57            android:value="@string/google_maps_key" />
-57-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:40:13-52
+57-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:40:13-52
 58
 59        <activity
-59-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:42:9-44:63
+59-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:42:9-44:63
 60            android:name="com.example.demonhacks.TrainMapActivity"
-60-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:43:13-45
+60-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:43:13-45
 61            android:label="@string/title_activity_train_map" />
-61-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:44:13-61
+61-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:44:13-61
 62        <activity
-62-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:46:9-86
+62-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:46:9-86
 63            android:name="com.example.demonhacks.MainActivity"
-63-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:46:19-47
+63-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:46:19-47
 64            android:screenOrientation="portrait" />
-64-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:46:48-84
+64-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:46:48-84
 65        <activity
-65-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:48:9-53:20
+65-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:48:9-53:20
 66            android:name="com.example.demonhacks.ArrivalsActivity"
-66-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:48:19-51
+66-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:48:19-51
 67            android:screenOrientation="portrait" >
-67-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:48:52-88
+67-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:48:52-88
 68            <intent-filter>
-68-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:49:13-52:29
+68-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:49:13-52:29
 69                <action android:name="android.intent.action.MAIN" />
-69-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:24:17-69
-69-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:24:25-66
+69-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:24:17-69
+69-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:24:25-66
 70
 71                <category android:name="android.intent.category.LAUNCHER" />
-71-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:27:17-77
-71-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:27:27-74
+71-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:27:17-77
+71-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:27:27-74
 72            </intent-filter>
 73        </activity>
 74        <activity
-74-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:55:9-88
+74-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:55:9-88
 75            android:name="com.example.demonhacks.ReportActivity"
-75-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:55:19-49
+75-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:55:19-49
 76            android:screenOrientation="portrait" />
-76-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:55:50-86
+76-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:55:50-86
 77        <activity
-77-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:56:9-94
+77-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:56:9-94
 78            android:name="com.example.demonhacks.SubmitReportActivity"
-78-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:56:19-55
+78-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:56:19-55
 79            android:screenOrientation="portrait" />
-79-->C:\Users\shini\Documents\Homework\DemonHacks\app\src\main\AndroidManifest.xml:56:56-92
+79-->D:\userGitRepository\DemonHacks\app\src\main\AndroidManifest.xml:56:56-92
 80
 81        <!-- Needs to be explicitly declared on P+ -->
 82        <uses-library
-82-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+82-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
 83            android:name="org.apache.http.legacy"
-83-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+83-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
 84            android:required="false" />
-84-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\53a8a49f9452cedc50924634c2e4cbba\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+84-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\cf217f19f5123ff72e67d545e2645879\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
 85
 86        <activity
-86-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\a70dca5785aa8ed6446d8c3752924921\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+86-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\8798970eaa64c51724263104eeb549a5\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
 87            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-87-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\a70dca5785aa8ed6446d8c3752924921\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+87-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\8798970eaa64c51724263104eeb549a5\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 88            android:exported="false"
-88-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\a70dca5785aa8ed6446d8c3752924921\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+88-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\8798970eaa64c51724263104eeb549a5\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
 89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-89-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\a70dca5785aa8ed6446d8c3752924921\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+89-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\8798970eaa64c51724263104eeb549a5\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
 90
 91        <meta-data
-91-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\9d7a59b7d13777267659a0996e314df0\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+91-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\95db2fd02f25a4714ab96aeb79f76b8e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
 92            android:name="com.google.android.gms.version"
-92-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\9d7a59b7d13777267659a0996e314df0\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+92-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\95db2fd02f25a4714ab96aeb79f76b8e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
 93            android:value="@integer/google_play_services_version" />
-93-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shini\.gradle\caches\transforms-2\files-2.1\9d7a59b7d13777267659a0996e314df0\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+93-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Coord\.gradle\caches\transforms-2\files-2.1\95db2fd02f25a4714ab96aeb79f76b8e\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
 94    </application>
 95
 96</manifest>

@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout menuDrawer;
 
     private ReportFragment reptFragment = new ReportFragment();
+    // private TrackerFragment trackerFrag = new TrackerFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         final FragmentTransaction ft = fm.beginTransaction();
 
+        // DEFAULT FRAGMENT
+//        if (!trackerFrag.isAdded()){
+//            ft.replace(R.id.flContent, trackerFrag);
+//            ft.addToBackStack(null);
+//            ft.commit();
+//        }
+
         menuDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView nv = (NavigationView) findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(
@@ -51,6 +59,18 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.launch_tracker:
                                 // fragment for tracker
                                 Log.i(ACTIVITYTAG, "launch tracker pressed");
+
+                                //code here
+                        //        if (!trackerFrag.isAdded()){
+                        //            ft.replace(R.id.flContent, trackerFrag);
+                        //            ft.addToBackStack(null);
+                        //            ft.commit();
+                        //        }
+                                menuDrawer.closeDrawers();
+                                return true;
+                            case R.id.launch_cards:
+                                // fragment for cta cards
+                                Log.i(ACTIVITYTAG, "ventra cards pressed");
 
                                 //code here
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#464646">
+    android:background="#edf7ff">
 
     <TextView
         android:id="@+id/stationTextView"
@@ -13,7 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Station Label"
-        android:textColor="@android:color/white"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/trainImageView"
@@ -36,7 +36,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:hint="arrivals"
-        android:textColor="@android:color/white"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/directionTextView"
@@ -51,8 +51,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:hint="time"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

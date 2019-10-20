@@ -18,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -99,12 +100,17 @@ public class JsonParser extends AsyncTask<String, String, String> {
 
             for (int i = 0; i < length; i++) {
                 JSONObject trainJsonObj = jsonArray.getJSONObject(i);
+
                 String arrivalTime = trainJsonObj.getString("arrT");
+                Log.d(TAG, "onPostExecute: "+ arrivalTime);
+
+                String[] timeData = getTime(arrivalTime);
+
                 String latitude = trainJsonObj.getString("lat");
                 String longitude = trainJsonObj.getString("lon");
 
                 //TODO: Fix Time String formatting
-                Train train = new Train(arrivalTime, "0 min", latitude, longitude);
+                Train train = new Train(timeData[0], timeData[1], latitude, longitude);
 
                 String color = trainJsonObj.getString("rt");
                 String stationId = trainJsonObj.getString("staId");
@@ -147,9 +153,34 @@ public class JsonParser extends AsyncTask<String, String, String> {
         return -1;
     }
 
-    public static String currentTime() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-ddTHH:mm:ss.SSS");
-        Date date = new Date();
-        return dateFormat.format(date);
+    // Arturo's Time Parsing Method
+    private static String[] getTime(String arrivalTime) {
+        String arrival_hour = arrivalTime.substring(11,13);
+        String arrival_min = arrivalTime.substring(14,16);
+        String[] s = new String[2];
+        LocalTime tm = java.time.LocalTime.now();
+        int hr = Integer.parseInt(arrival_hour);
+        int min = Integer.parseInt(arrival_min);
+
+        if(hr == 0) {
+            s[0] = String.format("Arriving at %d:%s AM", (Integer.parseInt(arrival_hour)+12), arrival_min);
+            s[1] = String.format("%d min", (Integer.parseInt(arrival_min)- tm.getMinute()));
+        }
+        else if(hr == 12) {
+            s[0] = String.format("Arriving at %d:%s PM", (Integer.parseInt(arrival_hour)-12), arrival_min);
+            s[1] = String.format("%s min", arrival_min);
+        }
+        else if(hr > 0 && hr < 12) {
+            int min_remaining = java.lang.Math.abs(min - tm.getMinute());
+            s[0] = String.format("Arriving at %s:%s AM", (Integer.parseInt(arrival_hour)), arrival_min);
+            s[1] = String.format("%d min" , min_remaining);
+
+        }
+        else {// hr > 12 && hr < 0
+            int min_remaining = java.lang.Math.abs(tm.getMinute()-min);
+            s[0] = String.format("Arriving at %s:%s PM", (Integer.parseInt(arrival_hour)-12), arrival_min);
+            s[1] = String.format("%d min" , min_remaining);
+        }
+        return s;
     }
 }

@@ -10,16 +10,22 @@ public class CTAParser {
 	public String[] Location_X;
 	public String[] Location_Y;
 
-	public CTAParser() {
+	public CTAParser(BufferedReader file1) {
+		BufferedReader reader = null;
 		try {
-			ArrayList<String> A = new ArrayList<String>();
 
-			File file1 = new File("CTA_-_System_Information_-_List_of__L__Stops.csv");
-			Scanner s = new Scanner(file1);
-			while (s.hasNextLine()) {
-				A.add(s.nextLine());
+			ArrayList<String> A = new ArrayList<String>();
+			reader = file1;
+
+			String line;
+			while ((line = reader.readLine()) != null) {
+				A.add(line);
 			}
-			s.close();
+//			Scanner s = new Scanner(file1);
+//			while (s.hasNextLine()) {
+//				A.add(s.nextLine());
+//			}
+//			s.close();
 			Station_Name = Station_Name(A);
 			Map_ID = Map_ID(A);
 			Location_X = X_Cord(A);

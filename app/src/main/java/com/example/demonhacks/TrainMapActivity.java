@@ -51,7 +51,6 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         mMap = googleMap;
         LatLng oof = new LatLng(41.879507, -87.626037);
         mMap.addCircle(new CircleOptions().center(oof).radius(250).fillColor(Color.CYAN).strokeColor(Color.CYAN));

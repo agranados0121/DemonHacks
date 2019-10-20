@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar appBar;
     private DrawerLayout menuDrawer;
 
+    private ReportFragment reptFragment = new ReportFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i(ACTIVITYTAG, "report emergency pressed");
 
                                 //code here
+                                if(!reptFragment.isAdded()) {
+
+                                }
 
                                 menuDrawer.closeDrawers();
                                 return true;

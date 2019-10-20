@@ -1,5 +1,6 @@
 package com.example.demonhacks;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +27,7 @@ public class SubmitReportFragment extends Fragment
         super.onCreate(bundle);
 
         // retain this fragment across activity reconfigs
-        setRetainInstance(true);
+        setRetainInstance(false);
     }
 
 
@@ -48,7 +49,11 @@ public class SubmitReportFragment extends Fragment
 
         View view = getView();
 
+
         imageView = (ImageView)view.findViewById(R.id.imageEvidence);
+        if (getArguments() != null) {
+            imageView.setImageBitmap((Bitmap) getArguments().getParcelable("picture"));
+        }
 
         spinner = (Spinner)view.findViewById(R.id.subjectSelection);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.reportTypes, android.R.layout.simple_spinner_item);

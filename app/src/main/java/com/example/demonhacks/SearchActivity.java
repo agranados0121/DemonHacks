@@ -26,13 +26,19 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         recyclerView.setAdapter(stationAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        generateBogusData();
+        getData();
     }
 
-    private void generateBogusData() {
-        stationList.add(new Station("41320", "Belmont", "", ""));
-        stationList.add(new Station("41220", "Fullerton", "", ""));
-        stationList.add(new Station("40380", "Clark/Lake", "", ""));
+    private void getData() {
+//        CTAParser data = new CTAParser();
+//        for (int i = 0; i < data.Map_ID.length; i++){
+//            stationList.add(new Station(data.Map_ID[i], data.Station_Name[i], data.Location_X[i], data.Location_Y[i]));
+//        }
+        stationList.add(new Station("41220", "Fullerton","",""));
+        stationList.add(new Station("41320", "Belmont","41.939751","-87.65338"));
+        stationList.add(new Station("40380", "Clark/Lake","",""));
+        stationList.add(new Station("40360", "Southport","",""));
+        stationList.add(new Station("40680", "Adams/Wabash","",""));
     }
 
     @Override

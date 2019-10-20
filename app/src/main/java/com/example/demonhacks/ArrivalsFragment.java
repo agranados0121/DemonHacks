@@ -22,6 +22,7 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
     private static final int CODE_FOR_SEARCH_ACTIVITY = 111;
     private static final String TAG = "ArrivalsActivity";
     private ArrayList<Route> routeList = new ArrayList<>();
+    private ArrayList<Station> stationList = new ArrayList<>();
     private String requestedStation;
     private RecyclerView recyclerView;
     private RouteAdapter routeAdapter;
@@ -81,6 +82,11 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
 
     public void getData() {
         Log.d(TAG, "getData: Parsing JSON");
+
+//        stationList.add(new Station("41220", "Fullerton","",""));
+//        stationList.add(new Station("41320", "Belmont","41.939751","-87.65338"));
+//        stationList.add(new Station("40380", "Clark/Lake","",""));
+
         new JsonParser(routeList, requestedStation, routeAdapter).execute(getString(R.string.cta_api_url));
     }
 
@@ -93,6 +99,7 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
 
     public void openSearchActivity() {
         Intent intent = new Intent(getContext(), SearchActivity.class);
+        //intent.putParcelableArrayListExtra(stationList);
         startActivityForResult(intent, CODE_FOR_SEARCH_ACTIVITY);
     }
 

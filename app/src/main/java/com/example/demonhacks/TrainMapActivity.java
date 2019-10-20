@@ -3,6 +3,7 @@ package com.example.demonhacks;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -11,6 +12,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -49,7 +51,10 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
+        LatLng oof = new LatLng(41.879507, -87.626037);
+        mMap.addCircle(new CircleOptions().center(oof).radius(250).fillColor(Color.CYAN).strokeColor(Color.CYAN));
         ArrayList<LatLng> markers = new ArrayList<>();
             for (Train t : route.getTrains()) {
                 try {

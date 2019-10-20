@@ -11,9 +11,9 @@ import android.view.View;
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener{
+public class ArrivalsActivity extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener{
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "ArrivalsActivity";
 
     private ArrayList<Route> routeList = new ArrayList<>();
     private String requestedStation;

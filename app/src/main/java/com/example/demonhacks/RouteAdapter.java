@@ -1,16 +1,12 @@
 package com.example.demonhacks;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -19,11 +15,11 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
 
     private static final String TAG = "RouteAdapter";
     private ArrayList<Route> routeList;
-    private MainActivity mainActivity;
+    private ArrivalsActivity arrivalsActivity;
 
-    RouteAdapter(ArrayList<Route> routeList, MainActivity mainActivity) {
+    RouteAdapter(ArrayList<Route> routeList, ArrivalsActivity arrivalsActivity) {
         this.routeList = routeList;
-        this.mainActivity = mainActivity;
+        this.arrivalsActivity = arrivalsActivity;
     }
 
     @NonNull
@@ -32,8 +28,8 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteViewHolder> {
         Log.d(TAG, "onCreateViewHolder: CREATING ROW");
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_item, parent, false);
 
-        itemView.setOnClickListener(mainActivity);
-        itemView.setOnLongClickListener(mainActivity);
+        itemView.setOnClickListener(arrivalsActivity);
+        itemView.setOnLongClickListener(arrivalsActivity);
 
         return new RouteViewHolder(itemView);
     }

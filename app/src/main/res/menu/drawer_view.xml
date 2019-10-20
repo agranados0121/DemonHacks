@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:menuCategory="container">
+
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/launch_tracker"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/tracker" />
+        <item
+            android:id="@+id/launch_timetable"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="@string/timetable" />
+        <item
+            android:id="@+id/launch_twitter"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/ctatwitter" />
+        <item
+            android:id="@+id/launch_reportemergency"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/reportemergency" />
+    </group>
+</menu>

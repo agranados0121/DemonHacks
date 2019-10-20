@@ -16,4 +16,12 @@
         <item>Other rule violation</item>
     </string-array>
 
+    <string name="app_name">DemonHacks Ventra 2</string>
+    <string name="tracker">Tracker</string>
+    <string name="timetable">Time Table</string>
+    <string name="ctatwitter">CTA Twitter</string>
+    <string name="reportemergency">Report Emergency</string>
+
+    <string name="help">Help</string>
+    <string name="reportIssue">Report Issue</string>
 </resources>

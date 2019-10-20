@@ -20,6 +20,9 @@
 
         <activity android:name=".ReportActivity" android:screenOrientation="portrait"/>
         <activity android:name=".SubmitReportActivity" android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGyEm3svNN0-8oZXHE7ZJU7-WTVh48NQ0"/>
 
     </application>
 

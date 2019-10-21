@@ -9,9 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
 import java.util.ArrayList;
 
 import demon.CTAParser;
@@ -34,12 +32,17 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         getData();
     }
 
+    // TODO Fix bug
     private void getData() {
         try {
+            stationList.clear();
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("CTA_-_System_Information_-_List_of__L__Stops.csv")));
             CTAParser data = new CTAParser(reader);
             for (int i = 0; i < data.Map_ID.length; i++){
-                stationList.add(new Station(data.Map_ID[i], data.Station_Name[i], data.Location_X[i], data.Location_Y[i]));
+                Station s = new Station(data.Map_ID[i], data.Station_Name[i], data.Location_X[i], data.Location_Y[i]);
+                if (!stationList.contains(s)) {
+                    stationList.add(s);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

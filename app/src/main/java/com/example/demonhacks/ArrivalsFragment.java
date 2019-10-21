@@ -82,12 +82,13 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
 
     public void getData() {
         Log.d(TAG, "getData: Parsing JSON");
-
-//        stationList.add(new Station("41220", "Fullerton","",""));
-//        stationList.add(new Station("41320", "Belmont","41.939751","-87.65338"));
-//        stationList.add(new Station("40380", "Clark/Lake","",""));
-
-        new JsonParser(routeList, requestedStation, routeAdapter).execute(getString(R.string.cta_api_url));
+        try {
+            String url = String.format("http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=73436616b5af4465bc65790aa9d4886c&mapid=" + requestedStation + "&=40530&outputType=JSON");
+            new JsonParser(routeList, requestedStation, routeAdapter).execute(url);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.d(TAG, "getData: ERROR PARSING JSON DATA");
+        }
     }
 
     public void openTrainMapActivity(int position) {

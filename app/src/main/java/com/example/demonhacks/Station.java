@@ -1,5 +1,7 @@
 package com.example.demonhacks;
 
+import androidx.annotation.Nullable;
+
 import java.io.Serializable;
 
 public class Station implements Serializable {
@@ -30,5 +32,17 @@ public class Station implements Serializable {
 
     public String getLon() {
         return lon;
+    }
+
+    @Override
+    public boolean equals(@Nullable Object obj) {
+        if (obj == this) {
+            return true;
+        } else if (!(obj instanceof Station)) {
+            return false;
+        }
+        Station station = (Station) obj;
+        return  station.mapId.equals(mapId) &&
+                station.name.equals(name);
     }
 }

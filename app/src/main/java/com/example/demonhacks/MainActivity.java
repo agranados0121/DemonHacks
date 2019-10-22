@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // DEFAULT FRAGMENT
         if (!arrivalsFragment.isAdded()){
             fm.beginTransaction().replace(R.id.flContent, arrivalsFragment)
-            .addToBackStack(null)
+            //.addToBackStack(null) // This results in an empty activity bug
             .commit();
         }
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                                 //code here
                                 if (!arrivalsFragment.isAdded()){
                                     ft.replace(R.id.flContent, arrivalsFragment);
-                                    ft.addToBackStack(null);
+                                    //ft.addToBackStack(null); // This results in an empty activity bug
                                     ft.commit();
                                 }
                                 menuDrawer.closeDrawers();

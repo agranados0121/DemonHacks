@@ -137,7 +137,7 @@ public class JsonParser extends AsyncTask<String, String, String> {
                     Log.d(TAG, String.format("onPostExecute: %s %s %s", r.getStationId(), r.getLine(), r.getTrains().get(j).getArrivalTime()));
                 }
             }
-        } catch (JSONException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

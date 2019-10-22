@@ -55,7 +55,7 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
             station = (Station) intent.getSerializableExtra("STATION");
             requestedStation = station.getMapId();
         } else {
-            requestedStation = "40380"; // Default 41220
+            requestedStation = "40380"; // Default to Clark/Lake
         }
 
         recyclerView = view.findViewById(R.id.arrivalsRecycler);
@@ -63,7 +63,7 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
         recyclerView.setAdapter(routeAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        routeList.clear();
+        //routeList.clear();
         routeAdapter.notifyDataSetChanged();
 
         getData();
@@ -138,4 +138,6 @@ public class ArrivalsFragment extends Fragment implements View.OnClickListener, 
         openTrainMapActivity(position);
         return true;
     }
+
+
 }

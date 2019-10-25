@@ -42,7 +42,6 @@ public class Station implements Serializable {
             return false;
         }
         Station station = (Station) obj;
-        return  station.mapId.equals(mapId) &&
-                station.name.equals(name);
+        return station.mapId.equals(mapId); // mapId is unique identifier
     }
 }

@@ -72,8 +72,6 @@ public class SplashScreenActivity extends AppCompatActivity
     private TextView textView;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

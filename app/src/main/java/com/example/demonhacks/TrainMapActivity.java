@@ -1,9 +1,13 @@
 package com.example.demonhacks;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -12,6 +16,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
@@ -23,6 +29,7 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
 
     private GoogleMap mMap;
     private Route route;
+    private LatLng currentLocation;
     private static final String TAG = "TrainMapActivity";
 
     @Override
@@ -38,6 +45,10 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
         if (intent.hasExtra("ROUTE")) {
             route = (Route) intent.getSerializableExtra("ROUTE");
         }
+        if (intent.hasExtra("LOCATION")) {
+            double[] coords = intent.getDoubleArrayExtra("LOCATION");
+            currentLocation = new LatLng(coords[0], coords[1]);
+        }
     }
 
     /**
@@ -52,8 +63,13 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng oof = new LatLng(41.879507, -87.626037);
-        mMap.addCircle(new CircleOptions().center(oof).radius(250).fillColor(Color.CYAN).strokeColor(Color.CYAN));
+
+        //LatLng currentLocation = new LatLng(41.879507, -87.626037); //TODO implement user location
+        if (currentLocation != null) {
+            mMap.addMarker(new MarkerOptions()
+                    .position(currentLocation)
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        }
         ArrayList<LatLng> markers = new ArrayList<>();
             for (Train t : route.getTrains()) {
                 try {
@@ -62,7 +78,11 @@ public class TrainMapActivity extends FragmentActivity implements OnMapReadyCall
                     LatLng coordinates = new LatLng(lat, lon);
                     markers.add(coordinates);
                     String title = String.format("%s line to %s", route.getLine(), route.getDestination());
-                    mMap.addMarker(new MarkerOptions().position(coordinates).title(title));
+
+                    mMap.addMarker(new MarkerOptions()
+                            .position(coordinates)
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.baseline_train_black_48))
+                            .title(title));
                 } catch (NumberFormatException e) {
                     Log.d(TAG, "onMapReady: Error Parsing Coordinates");
                     e.printStackTrace();
